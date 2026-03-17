@@ -1,0 +1,51 @@
+
+**** Build of configuration Nios II for project cpu_stage4 ****
+
+make all 
+      4 [main] sh 1480 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      3 [main] sh 11344 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      4 [main] echo 16060 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: Building ../cpu_stage4_bsp/
+make --no-print-directory -C ../cpu_stage4_bsp/
+      2 [main] pwd 8824 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      2 [main] sh 16376 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 15788 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      1 [main] echo 8132 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: Compiling main.c to obj/default/main.o
+      1 [main] mkdir 16912 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+nios2-elf-gcc -xc -MP -MMD -c -I../cpu_stage4_bsp//HAL/inc -I../cpu_stage4_bsp/ -I../cpu_stage4_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+      1 [main] true 15344 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] echo 17728 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: Linking cpu_stage4.elf
+nios2-elf-g++  -T'../cpu_stage4_bsp//linker.x' -msys-crt0='../cpu_stage4_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../cpu_stage4_bsp/   -Wl,-Map=cpu_stage4.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o cpu_stage4.elf obj/default/main.o -lm 
+nios2-elf-insert cpu_stage4.elf --thread_model hal --cpu_name cpu_stage4 --qsys true --simulation_enabled false --stderr_dev jtag_uart_4 --stdin_dev jtag_uart_4 --stdout_dev jtag_uart_4 --sopc_system_name MPSoC --quartus_project_dir "C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS" --sopcinfo C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC.sopcinfo
+      1 [main] sh 6772 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] uname 15476 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      1 [main] sh 16252 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (cpu_stage4.elf) 30 KBytes program size (code + initialized data).
+Info:                  9540 Bytes free for stack + heap.
+      4 [main] echo 5788 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: Creating cpu_stage4.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source cpu_stage4.elf >cpu_stage4.objdump
+      5 [main] sh 18356 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      4 [main] sh 12456 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[cpu_stage4 build complete]
+
+**** Build Finished ****

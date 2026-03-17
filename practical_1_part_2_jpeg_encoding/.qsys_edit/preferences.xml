@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="191" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="250" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="149" />
+   <clocksource preferredWidth="148" />
+   <frequency preferredWidth="129" />
+  </columns>
+ </clocktable>
+ <window width="2902" height="1570" x="-11" y="-11" />
+ <library
+   expandedCategories="Library/Bridges/Memory-Mapped,Library,Library/Bridges,Project" />
+</preferences>

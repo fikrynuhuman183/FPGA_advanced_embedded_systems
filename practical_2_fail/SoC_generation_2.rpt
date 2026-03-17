@@ -1,0 +1,147 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/ --output-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC/ --report-file=bsf:C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC.qsys
+Progress: Loading practical_2/SoC.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 13.1]
+Progress: Parameterizing module clock
+Progress: Adding cpu [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module sdram
+Progress: Adding timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding leds_out [altera_avalon_pio 13.1]
+Progress: Parameterizing module leds_out
+Progress: Adding altpll [altpll 13.1]
+Progress: Parameterizing module altpll
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding master_clock_crossing_bridge [altera_avalon_mm_clock_crossing_bridge 13.1]
+Progress: Parameterizing module master_clock_crossing_bridge
+Progress: Adding CRC_CUSTOM_0 [CRC_CUSTOM 1.0]
+Progress: Parameterizing module CRC_CUSTOM_0
+Progress: Adding high_resolution_timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module high_resolution_timer
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: SoC.cpu: The address range of the slaves connected to the Nios II instruction masters exceeds 28 bits. Attempts to call functions across 28-bit boundaries is not supported by GCC and will result in linker errors.
+Info: SoC.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: SoC.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Warning: SoC.CRC_CUSTOM_0.clock: Interface has no signals
+Warning: SoC.CRC_CUSTOM_0.reset: Interface has no signals
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal n has unknown type writebyteenable_n
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal clk_en has unknown type writeresponserequest_n
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal start has unknown type writeresponserequest_n
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal done has unknown type writeresponsevalid_n
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal result has unknown type readdata
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal dataa has unknown type writebyteenable_n
+Warning: SoC.altpll: altpll.areset_conduit must be exported, or connected to a matching conduit.
+Warning: SoC.altpll: altpll.locked_conduit must be exported, or connected to a matching conduit.
+Warning: SoC.altpll: altpll.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: SoC.high_resolution_timer: Interrupt sender high_resolution_timer.irq is not connected to an interrupt receiver
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/ --output-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC.html --report-file=sopcinfo:C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC.sopcinfo --report-file=cmp:C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC.cmp --report-file=qip:C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC/synthesis/SoC.qip --report-file=svd --report-file=regmap:C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC/synthesis/SoC.regmap --report-file=debuginfo:C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC/synthesis/SoC.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/DELL/Documents/advanced_embedded_systems/practical_2/SoC.qsys --language=VERILOG
+Progress: Loading practical_2/SoC.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 13.1]
+Progress: Parameterizing module clock
+Progress: Adding cpu [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module sdram
+Progress: Adding timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding leds_out [altera_avalon_pio 13.1]
+Progress: Parameterizing module leds_out
+Progress: Adding altpll [altpll 13.1]
+Progress: Parameterizing module altpll
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding master_clock_crossing_bridge [altera_avalon_mm_clock_crossing_bridge 13.1]
+Progress: Parameterizing module master_clock_crossing_bridge
+Progress: Adding CRC_CUSTOM_0 [CRC_CUSTOM 1.0]
+Progress: Parameterizing module CRC_CUSTOM_0
+Progress: Adding high_resolution_timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module high_resolution_timer
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: SoC.cpu: The address range of the slaves connected to the Nios II instruction masters exceeds 28 bits. Attempts to call functions across 28-bit boundaries is not supported by GCC and will result in linker errors.
+Info: SoC.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: SoC.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Warning: SoC.CRC_CUSTOM_0.clock: Interface has no signals
+Warning: SoC.CRC_CUSTOM_0.reset: Interface has no signals
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal n has unknown type writebyteenable_n
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal clk_en has unknown type writeresponserequest_n
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal start has unknown type writeresponserequest_n
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal done has unknown type writeresponsevalid_n
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal result has unknown type readdata
+Warning: SoC.CRC_CUSTOM_0.nios_custom_instruction_slave: Signal dataa has unknown type writebyteenable_n
+Warning: SoC.altpll: altpll.areset_conduit must be exported, or connected to a matching conduit.
+Warning: SoC.altpll: altpll.locked_conduit must be exported, or connected to a matching conduit.
+Warning: SoC.altpll: altpll.phasedone_conduit must be exported, or connected to a matching conduit.
+Warning: SoC.high_resolution_timer: Interrupt sender high_resolution_timer.irq is not connected to an interrupt receiver
+Info: SoC: Generating SoC "SoC" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 11 modules, 46 connections
+Info: merlin_custom_instruction_transform: After transform: 14 modules, 49 connections
+Info: merlin_initial_interconnect_transform: After transform: 8 modules, 30 connections
+Info: merlin_translator_transform: After transform: 17 modules, 65 connections
+Info: merlin_domain_transform: After transform: 36 modules, 182 connections
+Info: merlin_router_transform: After transform: 45 modules, 217 connections
+Info: merlin_network_to_switch_transform: After transform: 62 modules, 263 connections
+Info: Inserting clock-crossing logic between cmd_xbar_demux.src2 and cmd_xbar_mux_002.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_001.src2 and cmd_xbar_mux_002.sink1
+Info: Inserting clock-crossing logic between cmd_xbar_demux_001.src5 and cmd_xbar_mux_005.sink0
+Info: Inserting clock-crossing logic between rsp_xbar_demux_002.src0 and rsp_xbar_mux.sink2
+Info: Inserting clock-crossing logic between rsp_xbar_demux_002.src1 and rsp_xbar_mux_001.sink2
+Info: Inserting clock-crossing logic between rsp_xbar_demux_005.src0 and rsp_xbar_mux_001.sink5
+Info: com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: 68 modules, 301 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 74 modules, 380 connections
+Info: merlin_hierarchy_transform: After transform: 15 modules, 56 connections
+Info: merlin_initial_interconnect_transform: After transform: 6 modules, 11 connections
+Info: merlin_translator_transform: After transform: 9 modules, 23 connections
+Info: merlin_domain_transform: After transform: 15 modules, 60 connections
+Info: merlin_router_transform: After transform: 18 modules, 72 connections
+Info: merlin_traffic_limiter_transform: After transform: 19 modules, 77 connections
+Info: merlin_network_to_switch_transform: After transform: 24 modules, 90 connections
+Info: limiter_update_transform: After transform: 24 modules, 91 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 26 modules, 114 connections
+Info: merlin_hierarchy_transform: After transform: 16 modules, 60 connections
+Info: merlin_mm_transform: After transform: 16 modules, 60 connections
+Info: merlin_interrupt_mapper_transform: After transform: 17 modules, 64 connections
+Info: merlin_interrupt_sync_transform: After transform: 18 modules, 71 connections
+Info: reset_adaptation_transform: After transform: 24 modules, 77 connections
+Warning: SoC: "No matching role found for altpll:c0:c0 (clk)"
+Warning: SoC: "No matching role found for cpu_custom_instruction_master_translator:ci_slave:ci_slave_ipending (ipending)"
+Warning: SoC: "No matching role found for cpu_custom_instruction_master_translator:ci_slave:ci_slave_estatus (estatus)"
+Warning: SoC: "No matching role found for cpu_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: SoC: "No matching role found for cpu_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Error: SoC: More than one port in CRC_CUSTOM_0:nios_custom_instruction_slave has role writebyteenable_n
+Error: SoC: More than one port in CRC_CUSTOM_0:nios_custom_instruction_slave has role writeresponserequest_n
+Warning: SoC: "No matching role found for cpu_custom_instruction_master_multi_slave_translator0:ci_master:ci_master_result (result)"
+Error: SoC: More than one port in CRC_CUSTOM_0:nios_custom_instruction_slave has role writebyteenable_n
+Error: SoC: More than one port in CRC_CUSTOM_0:nios_custom_instruction_slave has role writeresponserequest_n
+Warning: SoC: "No matching role found for cpu_custom_instruction_master_multi_slave_translator0:ci_master:ci_master_clken (clk_en)"
+Error: SoC: More than one port in CRC_CUSTOM_0:nios_custom_instruction_slave has role writebyteenable_n
+Error: SoC: More than one port in CRC_CUSTOM_0:nios_custom_instruction_slave has role writeresponserequest_n
+Error: SoC: More than one port in CRC_CUSTOM_0:nios_custom_instruction_slave has role writebyteenable_n
+Error: SoC: More than one port in CRC_CUSTOM_0:nios_custom_instruction_slave has role writeresponserequest_n
+Error: SoC: More than one port in CRC_CUSTOM_0:nios_custom_instruction_slave has role writebyteenable_n
+Error: SoC: More than one port in CRC_CUSTOM_0:nios_custom_instruction_slave has role writeresponserequest_n
+Warning: SoC: "No matching role found for CRC_CUSTOM_0:nios_custom_instruction_slave:done (writeresponsevalid_n)"
+Warning: SoC: "No matching role found for CRC_CUSTOM_0:nios_custom_instruction_slave:result (readdata)"
+Warning: SoC: "No matching role found for rst_controller_003:reset_out:reset_out (reset)"
+Error: Generation stopped, 22 or more modules remaining
+Info: SoC: Done "SoC" with 19 modules, 1 files, 93161 bytes
+Error: ip-generate failed with exit code 1: 11 Errors, 23 Warnings
+Info: Finished: Create HDL design files for synthesis

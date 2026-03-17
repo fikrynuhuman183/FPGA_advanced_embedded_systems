@@ -1,0 +1,817 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="2fd3d670208892f01262"/>
+  </project>
+  <file_info>
+    <file device="EP4CE115F29C7" path="jpeg_pipeline.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <hub_info hub_ir_width="7" ir_width="2" node_addr_width="4" node_count="12"/>
+  <node_info>
+    <node hpath="MPSoC:inst|MPSoC_cpu_stage1:cpu_stage1|MPSoC_cpu_stage1_nios2_oci:the_MPSoC_cpu_stage1_nios2_oci|MPSoC_cpu_stage1_jtag_debug_module_wrapper:the_MPSoC_cpu_stage1_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage1_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="0" mfg_id="70" node_id="34" sld_node_info="0x19104600" version="3">
+      <parameters>
+        <parameter name="sld_mfg_id" type="dec" value="70"/>
+        <parameter name="sld_type_id" type="dec" value="34"/>
+        <parameter name="sld_version" type="dec" value="3"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_ir_width" type="dec" value="2"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="420496896"/>
+      </parameters>
+      <inputs>
+        <port name="usr_tdo" source="MPSoC:inst|MPSoC_cpu_stage1:cpu_stage1|MPSoC_cpu_stage1_nios2_oci:the_MPSoC_cpu_stage1_nios2_oci|MPSoC_cpu_stage1_jtag_debug_module_wrapper:the_MPSoC_cpu_stage1_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage1_jtag_debug_module_phy|tdo"/>
+        <port name="usr_ir_out[0]" source="MPSoC:inst|MPSoC_cpu_stage1:cpu_stage1|MPSoC_cpu_stage1_nios2_oci:the_MPSoC_cpu_stage1_nios2_oci|MPSoC_cpu_stage1_jtag_debug_module_wrapper:the_MPSoC_cpu_stage1_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage1_jtag_debug_module_phy|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="MPSoC:inst|MPSoC_cpu_stage1:cpu_stage1|MPSoC_cpu_stage1_nios2_oci:the_MPSoC_cpu_stage1_nios2_oci|MPSoC_cpu_stage1_jtag_debug_module_wrapper:the_MPSoC_cpu_stage1_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage1_jtag_debug_module_phy|ir_out[1]"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_" source="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_"/>
+      </inputs>
+      <outputs>
+        <port name="usr_tck"/>
+        <port name="usr_tdi"/>
+        <port name="usr_ir_in[0]"/>
+        <port name="usr_ir_in[1]"/>
+        <port name="usr_virtual_state_cdr"/>
+        <port name="usr_virtual_state_sdr"/>
+        <port name="usr_virtual_state_e1dr"/>
+        <port name="usr_virtual_state_pdr"/>
+        <port name="usr_virtual_state_e2dr"/>
+        <port name="usr_virtual_state_udr"/>
+        <port name="usr_virtual_state_cir"/>
+        <port name="usr_virtual_state_uir"/>
+        <port name="usr_tms"/>
+        <port name="usr_jtag_state_tlr"/>
+        <port name="usr_jtag_state_rti"/>
+        <port name="usr_jtag_state_sdrs"/>
+        <port name="usr_jtag_state_cdr"/>
+        <port name="usr_jtag_state_sdr"/>
+        <port name="usr_jtag_state_e1dr"/>
+        <port name="usr_jtag_state_pdr"/>
+        <port name="usr_jtag_state_e2dr"/>
+        <port name="usr_jtag_state_udr"/>
+        <port name="usr_jtag_state_sirs"/>
+        <port name="usr_jtag_state_cir"/>
+        <port name="usr_jtag_state_sir"/>
+        <port name="usr_jtag_state_e1ir"/>
+        <port name="usr_jtag_state_pir"/>
+        <port name="usr_jtag_state_e2ir"/>
+        <port name="usr_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdo"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_0_"/>
+        <port name="jtag.bp.inst_cpu_stage1_the_MPSoC_cpu_stage1_nios2_oci_the_MPSoC_cpu_stage1_jtag_debug_module_wrapper_MPSoC_cpu_stage1_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_1_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_cpu_stage2:cpu_stage2|MPSoC_cpu_stage2_nios2_oci:the_MPSoC_cpu_stage2_nios2_oci|MPSoC_cpu_stage2_jtag_debug_module_wrapper:the_MPSoC_cpu_stage2_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage2_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="1" mfg_id="70" node_id="34" sld_node_info="0x19104601" version="3">
+      <parameters>
+        <parameter name="sld_mfg_id" type="dec" value="70"/>
+        <parameter name="sld_type_id" type="dec" value="34"/>
+        <parameter name="sld_version" type="dec" value="3"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_ir_width" type="dec" value="2"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="420496896"/>
+      </parameters>
+      <inputs>
+        <port name="usr_tdo" source="MPSoC:inst|MPSoC_cpu_stage2:cpu_stage2|MPSoC_cpu_stage2_nios2_oci:the_MPSoC_cpu_stage2_nios2_oci|MPSoC_cpu_stage2_jtag_debug_module_wrapper:the_MPSoC_cpu_stage2_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage2_jtag_debug_module_phy|tdo"/>
+        <port name="usr_ir_out[0]" source="MPSoC:inst|MPSoC_cpu_stage2:cpu_stage2|MPSoC_cpu_stage2_nios2_oci:the_MPSoC_cpu_stage2_nios2_oci|MPSoC_cpu_stage2_jtag_debug_module_wrapper:the_MPSoC_cpu_stage2_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage2_jtag_debug_module_phy|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="MPSoC:inst|MPSoC_cpu_stage2:cpu_stage2|MPSoC_cpu_stage2_nios2_oci:the_MPSoC_cpu_stage2_nios2_oci|MPSoC_cpu_stage2_jtag_debug_module_wrapper:the_MPSoC_cpu_stage2_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage2_jtag_debug_module_phy|ir_out[1]"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_" source="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_"/>
+      </inputs>
+      <outputs>
+        <port name="usr_tck"/>
+        <port name="usr_tdi"/>
+        <port name="usr_ir_in[0]"/>
+        <port name="usr_ir_in[1]"/>
+        <port name="usr_virtual_state_cdr"/>
+        <port name="usr_virtual_state_sdr"/>
+        <port name="usr_virtual_state_e1dr"/>
+        <port name="usr_virtual_state_pdr"/>
+        <port name="usr_virtual_state_e2dr"/>
+        <port name="usr_virtual_state_udr"/>
+        <port name="usr_virtual_state_cir"/>
+        <port name="usr_virtual_state_uir"/>
+        <port name="usr_tms"/>
+        <port name="usr_jtag_state_tlr"/>
+        <port name="usr_jtag_state_rti"/>
+        <port name="usr_jtag_state_sdrs"/>
+        <port name="usr_jtag_state_cdr"/>
+        <port name="usr_jtag_state_sdr"/>
+        <port name="usr_jtag_state_e1dr"/>
+        <port name="usr_jtag_state_pdr"/>
+        <port name="usr_jtag_state_e2dr"/>
+        <port name="usr_jtag_state_udr"/>
+        <port name="usr_jtag_state_sirs"/>
+        <port name="usr_jtag_state_cir"/>
+        <port name="usr_jtag_state_sir"/>
+        <port name="usr_jtag_state_e1ir"/>
+        <port name="usr_jtag_state_pir"/>
+        <port name="usr_jtag_state_e2ir"/>
+        <port name="usr_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdo"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_0_"/>
+        <port name="jtag.bp.inst_cpu_stage2_the_MPSoC_cpu_stage2_nios2_oci_the_MPSoC_cpu_stage2_jtag_debug_module_wrapper_MPSoC_cpu_stage2_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_1_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_cpu_stage3:cpu_stage3|MPSoC_cpu_stage3_nios2_oci:the_MPSoC_cpu_stage3_nios2_oci|MPSoC_cpu_stage3_jtag_debug_module_wrapper:the_MPSoC_cpu_stage3_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage3_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="2" mfg_id="70" node_id="34" sld_node_info="0x19104602" version="3">
+      <parameters>
+        <parameter name="sld_mfg_id" type="dec" value="70"/>
+        <parameter name="sld_type_id" type="dec" value="34"/>
+        <parameter name="sld_version" type="dec" value="3"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_ir_width" type="dec" value="2"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="420496896"/>
+      </parameters>
+      <inputs>
+        <port name="usr_tdo" source="MPSoC:inst|MPSoC_cpu_stage3:cpu_stage3|MPSoC_cpu_stage3_nios2_oci:the_MPSoC_cpu_stage3_nios2_oci|MPSoC_cpu_stage3_jtag_debug_module_wrapper:the_MPSoC_cpu_stage3_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage3_jtag_debug_module_phy|tdo"/>
+        <port name="usr_ir_out[0]" source="MPSoC:inst|MPSoC_cpu_stage3:cpu_stage3|MPSoC_cpu_stage3_nios2_oci:the_MPSoC_cpu_stage3_nios2_oci|MPSoC_cpu_stage3_jtag_debug_module_wrapper:the_MPSoC_cpu_stage3_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage3_jtag_debug_module_phy|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="MPSoC:inst|MPSoC_cpu_stage3:cpu_stage3|MPSoC_cpu_stage3_nios2_oci:the_MPSoC_cpu_stage3_nios2_oci|MPSoC_cpu_stage3_jtag_debug_module_wrapper:the_MPSoC_cpu_stage3_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage3_jtag_debug_module_phy|ir_out[1]"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_" source="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_"/>
+      </inputs>
+      <outputs>
+        <port name="usr_tck"/>
+        <port name="usr_tdi"/>
+        <port name="usr_ir_in[0]"/>
+        <port name="usr_ir_in[1]"/>
+        <port name="usr_virtual_state_cdr"/>
+        <port name="usr_virtual_state_sdr"/>
+        <port name="usr_virtual_state_e1dr"/>
+        <port name="usr_virtual_state_pdr"/>
+        <port name="usr_virtual_state_e2dr"/>
+        <port name="usr_virtual_state_udr"/>
+        <port name="usr_virtual_state_cir"/>
+        <port name="usr_virtual_state_uir"/>
+        <port name="usr_tms"/>
+        <port name="usr_jtag_state_tlr"/>
+        <port name="usr_jtag_state_rti"/>
+        <port name="usr_jtag_state_sdrs"/>
+        <port name="usr_jtag_state_cdr"/>
+        <port name="usr_jtag_state_sdr"/>
+        <port name="usr_jtag_state_e1dr"/>
+        <port name="usr_jtag_state_pdr"/>
+        <port name="usr_jtag_state_e2dr"/>
+        <port name="usr_jtag_state_udr"/>
+        <port name="usr_jtag_state_sirs"/>
+        <port name="usr_jtag_state_cir"/>
+        <port name="usr_jtag_state_sir"/>
+        <port name="usr_jtag_state_e1ir"/>
+        <port name="usr_jtag_state_pir"/>
+        <port name="usr_jtag_state_e2ir"/>
+        <port name="usr_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdo"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_0_"/>
+        <port name="jtag.bp.inst_cpu_stage3_the_MPSoC_cpu_stage3_nios2_oci_the_MPSoC_cpu_stage3_jtag_debug_module_wrapper_MPSoC_cpu_stage3_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_1_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_cpu_stage4:cpu_stage4|MPSoC_cpu_stage4_nios2_oci:the_MPSoC_cpu_stage4_nios2_oci|MPSoC_cpu_stage4_jtag_debug_module_wrapper:the_MPSoC_cpu_stage4_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage4_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="3" mfg_id="70" node_id="34" sld_node_info="0x19104603" version="3">
+      <parameters>
+        <parameter name="sld_mfg_id" type="dec" value="70"/>
+        <parameter name="sld_type_id" type="dec" value="34"/>
+        <parameter name="sld_version" type="dec" value="3"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_ir_width" type="dec" value="2"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="420496896"/>
+      </parameters>
+      <inputs>
+        <port name="usr_tdo" source="MPSoC:inst|MPSoC_cpu_stage4:cpu_stage4|MPSoC_cpu_stage4_nios2_oci:the_MPSoC_cpu_stage4_nios2_oci|MPSoC_cpu_stage4_jtag_debug_module_wrapper:the_MPSoC_cpu_stage4_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage4_jtag_debug_module_phy|tdo"/>
+        <port name="usr_ir_out[0]" source="MPSoC:inst|MPSoC_cpu_stage4:cpu_stage4|MPSoC_cpu_stage4_nios2_oci:the_MPSoC_cpu_stage4_nios2_oci|MPSoC_cpu_stage4_jtag_debug_module_wrapper:the_MPSoC_cpu_stage4_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage4_jtag_debug_module_phy|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="MPSoC:inst|MPSoC_cpu_stage4:cpu_stage4|MPSoC_cpu_stage4_nios2_oci:the_MPSoC_cpu_stage4_nios2_oci|MPSoC_cpu_stage4_jtag_debug_module_wrapper:the_MPSoC_cpu_stage4_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage4_jtag_debug_module_phy|ir_out[1]"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_" source="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_"/>
+      </inputs>
+      <outputs>
+        <port name="usr_tck"/>
+        <port name="usr_tdi"/>
+        <port name="usr_ir_in[0]"/>
+        <port name="usr_ir_in[1]"/>
+        <port name="usr_virtual_state_cdr"/>
+        <port name="usr_virtual_state_sdr"/>
+        <port name="usr_virtual_state_e1dr"/>
+        <port name="usr_virtual_state_pdr"/>
+        <port name="usr_virtual_state_e2dr"/>
+        <port name="usr_virtual_state_udr"/>
+        <port name="usr_virtual_state_cir"/>
+        <port name="usr_virtual_state_uir"/>
+        <port name="usr_tms"/>
+        <port name="usr_jtag_state_tlr"/>
+        <port name="usr_jtag_state_rti"/>
+        <port name="usr_jtag_state_sdrs"/>
+        <port name="usr_jtag_state_cdr"/>
+        <port name="usr_jtag_state_sdr"/>
+        <port name="usr_jtag_state_e1dr"/>
+        <port name="usr_jtag_state_pdr"/>
+        <port name="usr_jtag_state_e2dr"/>
+        <port name="usr_jtag_state_udr"/>
+        <port name="usr_jtag_state_sirs"/>
+        <port name="usr_jtag_state_cir"/>
+        <port name="usr_jtag_state_sir"/>
+        <port name="usr_jtag_state_e1ir"/>
+        <port name="usr_jtag_state_pir"/>
+        <port name="usr_jtag_state_e2ir"/>
+        <port name="usr_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdo"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_0_"/>
+        <port name="jtag.bp.inst_cpu_stage4_the_MPSoC_cpu_stage4_nios2_oci_the_MPSoC_cpu_stage4_jtag_debug_module_wrapper_MPSoC_cpu_stage4_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_1_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_cpu_stage5:cpu_stage5|MPSoC_cpu_stage5_nios2_oci:the_MPSoC_cpu_stage5_nios2_oci|MPSoC_cpu_stage5_jtag_debug_module_wrapper:the_MPSoC_cpu_stage5_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage5_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="4" mfg_id="70" node_id="34" sld_node_info="0x19104604" version="3">
+      <parameters>
+        <parameter name="sld_mfg_id" type="dec" value="70"/>
+        <parameter name="sld_type_id" type="dec" value="34"/>
+        <parameter name="sld_version" type="dec" value="3"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_ir_width" type="dec" value="2"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="420496896"/>
+      </parameters>
+      <inputs>
+        <port name="usr_tdo" source="MPSoC:inst|MPSoC_cpu_stage5:cpu_stage5|MPSoC_cpu_stage5_nios2_oci:the_MPSoC_cpu_stage5_nios2_oci|MPSoC_cpu_stage5_jtag_debug_module_wrapper:the_MPSoC_cpu_stage5_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage5_jtag_debug_module_phy|tdo"/>
+        <port name="usr_ir_out[0]" source="MPSoC:inst|MPSoC_cpu_stage5:cpu_stage5|MPSoC_cpu_stage5_nios2_oci:the_MPSoC_cpu_stage5_nios2_oci|MPSoC_cpu_stage5_jtag_debug_module_wrapper:the_MPSoC_cpu_stage5_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage5_jtag_debug_module_phy|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="MPSoC:inst|MPSoC_cpu_stage5:cpu_stage5|MPSoC_cpu_stage5_nios2_oci:the_MPSoC_cpu_stage5_nios2_oci|MPSoC_cpu_stage5_jtag_debug_module_wrapper:the_MPSoC_cpu_stage5_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage5_jtag_debug_module_phy|ir_out[1]"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_" source="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_"/>
+      </inputs>
+      <outputs>
+        <port name="usr_tck"/>
+        <port name="usr_tdi"/>
+        <port name="usr_ir_in[0]"/>
+        <port name="usr_ir_in[1]"/>
+        <port name="usr_virtual_state_cdr"/>
+        <port name="usr_virtual_state_sdr"/>
+        <port name="usr_virtual_state_e1dr"/>
+        <port name="usr_virtual_state_pdr"/>
+        <port name="usr_virtual_state_e2dr"/>
+        <port name="usr_virtual_state_udr"/>
+        <port name="usr_virtual_state_cir"/>
+        <port name="usr_virtual_state_uir"/>
+        <port name="usr_tms"/>
+        <port name="usr_jtag_state_tlr"/>
+        <port name="usr_jtag_state_rti"/>
+        <port name="usr_jtag_state_sdrs"/>
+        <port name="usr_jtag_state_cdr"/>
+        <port name="usr_jtag_state_sdr"/>
+        <port name="usr_jtag_state_e1dr"/>
+        <port name="usr_jtag_state_pdr"/>
+        <port name="usr_jtag_state_e2dr"/>
+        <port name="usr_jtag_state_udr"/>
+        <port name="usr_jtag_state_sirs"/>
+        <port name="usr_jtag_state_cir"/>
+        <port name="usr_jtag_state_sir"/>
+        <port name="usr_jtag_state_e1ir"/>
+        <port name="usr_jtag_state_pir"/>
+        <port name="usr_jtag_state_e2ir"/>
+        <port name="usr_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdo"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_0_"/>
+        <port name="jtag.bp.inst_cpu_stage5_the_MPSoC_cpu_stage5_nios2_oci_the_MPSoC_cpu_stage5_jtag_debug_module_wrapper_MPSoC_cpu_stage5_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_1_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_cpu_stage6:cpu_stage6|MPSoC_cpu_stage6_nios2_oci:the_MPSoC_cpu_stage6_nios2_oci|MPSoC_cpu_stage6_jtag_debug_module_wrapper:the_MPSoC_cpu_stage6_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage6_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="5" mfg_id="70" node_id="34" sld_node_info="0x19104605" version="3">
+      <parameters>
+        <parameter name="sld_mfg_id" type="dec" value="70"/>
+        <parameter name="sld_type_id" type="dec" value="34"/>
+        <parameter name="sld_version" type="dec" value="3"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_ir_width" type="dec" value="2"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="420496896"/>
+      </parameters>
+      <inputs>
+        <port name="usr_tdo" source="MPSoC:inst|MPSoC_cpu_stage6:cpu_stage6|MPSoC_cpu_stage6_nios2_oci:the_MPSoC_cpu_stage6_nios2_oci|MPSoC_cpu_stage6_jtag_debug_module_wrapper:the_MPSoC_cpu_stage6_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage6_jtag_debug_module_phy|tdo"/>
+        <port name="usr_ir_out[0]" source="MPSoC:inst|MPSoC_cpu_stage6:cpu_stage6|MPSoC_cpu_stage6_nios2_oci:the_MPSoC_cpu_stage6_nios2_oci|MPSoC_cpu_stage6_jtag_debug_module_wrapper:the_MPSoC_cpu_stage6_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage6_jtag_debug_module_phy|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="MPSoC:inst|MPSoC_cpu_stage6:cpu_stage6|MPSoC_cpu_stage6_nios2_oci:the_MPSoC_cpu_stage6_nios2_oci|MPSoC_cpu_stage6_jtag_debug_module_wrapper:the_MPSoC_cpu_stage6_jtag_debug_module_wrapper|sld_virtual_jtag_basic:MPSoC_cpu_stage6_jtag_debug_module_phy|ir_out[1]"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_" source="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_"/>
+      </inputs>
+      <outputs>
+        <port name="usr_tck"/>
+        <port name="usr_tdi"/>
+        <port name="usr_ir_in[0]"/>
+        <port name="usr_ir_in[1]"/>
+        <port name="usr_virtual_state_cdr"/>
+        <port name="usr_virtual_state_sdr"/>
+        <port name="usr_virtual_state_e1dr"/>
+        <port name="usr_virtual_state_pdr"/>
+        <port name="usr_virtual_state_e2dr"/>
+        <port name="usr_virtual_state_udr"/>
+        <port name="usr_virtual_state_cir"/>
+        <port name="usr_virtual_state_uir"/>
+        <port name="usr_tms"/>
+        <port name="usr_jtag_state_tlr"/>
+        <port name="usr_jtag_state_rti"/>
+        <port name="usr_jtag_state_sdrs"/>
+        <port name="usr_jtag_state_cdr"/>
+        <port name="usr_jtag_state_sdr"/>
+        <port name="usr_jtag_state_e1dr"/>
+        <port name="usr_jtag_state_pdr"/>
+        <port name="usr_jtag_state_e2dr"/>
+        <port name="usr_jtag_state_udr"/>
+        <port name="usr_jtag_state_sirs"/>
+        <port name="usr_jtag_state_cir"/>
+        <port name="usr_jtag_state_sir"/>
+        <port name="usr_jtag_state_e1ir"/>
+        <port name="usr_jtag_state_pir"/>
+        <port name="usr_jtag_state_e2ir"/>
+        <port name="usr_jtag_state_uir"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdo"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_0_"/>
+        <port name="jtag.bp.inst_cpu_stage6_the_MPSoC_cpu_stage6_nios2_oci_the_MPSoC_cpu_stage6_jtag_debug_module_wrapper_MPSoC_cpu_stage6_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_1_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|alt_jtag_atlantic:MPSoC_jtag_uart_1_alt_jtag_atlantic" instance_id="0" mfg_id="110" node_id="128" sld_node_info="0xC006E00" version="1">
+      <parameters>
+        <parameter name="INSTANCE_ID" type="dec" value="0"/>
+        <parameter name="SLD_NODE_INFO" type="ubin" value="00001100000000000110111000000000"/>
+        <parameter name="SLD_AUTO_INSTANCE_INDEX" type="string" value="YES"/>
+        <parameter name="LOG2_TXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="LOG2_RXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="RESERVED" type="dec" value="0"/>
+        <parameter name="DATA_WIDTH" type="dec" value="8"/>
+        <parameter name="NODE_IR_WIDTH" type="dec" value="1"/>
+        <parameter name="SCAN_LENGTH" type="dec" value="11"/>
+      </parameters>
+      <inputs>
+        <port name="clk" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|clk"/>
+        <port name="rst_n" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|rst_n"/>
+        <port name="r_val" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|r_val"/>
+        <port name="r_dat[0]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[0]"/>
+        <port name="r_dat[1]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[1]"/>
+        <port name="r_dat[2]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[2]"/>
+        <port name="r_dat[3]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[3]"/>
+        <port name="r_dat[4]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[4]"/>
+        <port name="r_dat[5]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[5]"/>
+        <port name="r_dat[6]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[6]"/>
+        <port name="r_dat[7]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[7]"/>
+        <port name="t_dav" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_1|t_dav"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_update" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_update"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr" source="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr"/>
+      </inputs>
+      <outputs>
+        <port name="r_ena"/>
+        <port name="r_ena"/>
+        <port name="t_ena"/>
+        <port name="t_ena"/>
+        <port name="t_dat[0]"/>
+        <port name="t_dat[1]"/>
+        <port name="t_dat[2]"/>
+        <port name="t_dat[3]"/>
+        <port name="t_dat[4]"/>
+        <port name="t_dat[5]"/>
+        <port name="t_dat[6]"/>
+        <port name="t_dat[7]"/>
+        <port name="t_pause"/>
+        <port name="t_pause"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdo"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_irq"/>
+        <port name="jtag.bp.inst_jtag_uart_1_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_out_0_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|alt_jtag_atlantic:MPSoC_jtag_uart_1_alt_jtag_atlantic" instance_id="1" mfg_id="110" node_id="128" sld_node_info="0xC006E01" version="1">
+      <parameters>
+        <parameter name="INSTANCE_ID" type="dec" value="0"/>
+        <parameter name="SLD_NODE_INFO" type="ubin" value="00001100000000000110111000000000"/>
+        <parameter name="SLD_AUTO_INSTANCE_INDEX" type="string" value="YES"/>
+        <parameter name="LOG2_TXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="LOG2_RXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="RESERVED" type="dec" value="0"/>
+        <parameter name="DATA_WIDTH" type="dec" value="8"/>
+        <parameter name="NODE_IR_WIDTH" type="dec" value="1"/>
+        <parameter name="SCAN_LENGTH" type="dec" value="11"/>
+      </parameters>
+      <inputs>
+        <port name="clk" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|clk"/>
+        <port name="rst_n" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|rst_n"/>
+        <port name="r_val" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|r_val"/>
+        <port name="r_dat[0]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[0]"/>
+        <port name="r_dat[1]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[1]"/>
+        <port name="r_dat[2]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[2]"/>
+        <port name="r_dat[3]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[3]"/>
+        <port name="r_dat[4]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[4]"/>
+        <port name="r_dat[5]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[5]"/>
+        <port name="r_dat[6]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[6]"/>
+        <port name="r_dat[7]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[7]"/>
+        <port name="t_dav" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_2|t_dav"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_update" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_update"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr" source="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr"/>
+      </inputs>
+      <outputs>
+        <port name="r_ena"/>
+        <port name="r_ena"/>
+        <port name="t_ena"/>
+        <port name="t_ena"/>
+        <port name="t_dat[0]"/>
+        <port name="t_dat[1]"/>
+        <port name="t_dat[2]"/>
+        <port name="t_dat[3]"/>
+        <port name="t_dat[4]"/>
+        <port name="t_dat[5]"/>
+        <port name="t_dat[6]"/>
+        <port name="t_dat[7]"/>
+        <port name="t_pause"/>
+        <port name="t_pause"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdo"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_irq"/>
+        <port name="jtag.bp.inst_jtag_uart_2_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_out_0_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|alt_jtag_atlantic:MPSoC_jtag_uart_1_alt_jtag_atlantic" instance_id="2" mfg_id="110" node_id="128" sld_node_info="0xC006E02" version="1">
+      <parameters>
+        <parameter name="INSTANCE_ID" type="dec" value="0"/>
+        <parameter name="SLD_NODE_INFO" type="ubin" value="00001100000000000110111000000000"/>
+        <parameter name="SLD_AUTO_INSTANCE_INDEX" type="string" value="YES"/>
+        <parameter name="LOG2_TXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="LOG2_RXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="RESERVED" type="dec" value="0"/>
+        <parameter name="DATA_WIDTH" type="dec" value="8"/>
+        <parameter name="NODE_IR_WIDTH" type="dec" value="1"/>
+        <parameter name="SCAN_LENGTH" type="dec" value="11"/>
+      </parameters>
+      <inputs>
+        <port name="clk" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|clk"/>
+        <port name="rst_n" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|rst_n"/>
+        <port name="r_val" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|r_val"/>
+        <port name="r_dat[0]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[0]"/>
+        <port name="r_dat[1]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[1]"/>
+        <port name="r_dat[2]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[2]"/>
+        <port name="r_dat[3]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[3]"/>
+        <port name="r_dat[4]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[4]"/>
+        <port name="r_dat[5]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[5]"/>
+        <port name="r_dat[6]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[6]"/>
+        <port name="r_dat[7]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[7]"/>
+        <port name="t_dav" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_3|t_dav"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_update" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_update"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr" source="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr"/>
+      </inputs>
+      <outputs>
+        <port name="r_ena"/>
+        <port name="r_ena"/>
+        <port name="t_ena"/>
+        <port name="t_ena"/>
+        <port name="t_dat[0]"/>
+        <port name="t_dat[1]"/>
+        <port name="t_dat[2]"/>
+        <port name="t_dat[3]"/>
+        <port name="t_dat[4]"/>
+        <port name="t_dat[5]"/>
+        <port name="t_dat[6]"/>
+        <port name="t_dat[7]"/>
+        <port name="t_pause"/>
+        <port name="t_pause"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdo"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_irq"/>
+        <port name="jtag.bp.inst_jtag_uart_3_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_out_0_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|alt_jtag_atlantic:MPSoC_jtag_uart_1_alt_jtag_atlantic" instance_id="3" mfg_id="110" node_id="128" sld_node_info="0xC006E03" version="1">
+      <parameters>
+        <parameter name="INSTANCE_ID" type="dec" value="0"/>
+        <parameter name="SLD_NODE_INFO" type="ubin" value="00001100000000000110111000000000"/>
+        <parameter name="SLD_AUTO_INSTANCE_INDEX" type="string" value="YES"/>
+        <parameter name="LOG2_TXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="LOG2_RXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="RESERVED" type="dec" value="0"/>
+        <parameter name="DATA_WIDTH" type="dec" value="8"/>
+        <parameter name="NODE_IR_WIDTH" type="dec" value="1"/>
+        <parameter name="SCAN_LENGTH" type="dec" value="11"/>
+      </parameters>
+      <inputs>
+        <port name="clk" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|clk"/>
+        <port name="rst_n" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|rst_n"/>
+        <port name="r_val" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|r_val"/>
+        <port name="r_dat[0]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[0]"/>
+        <port name="r_dat[1]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[1]"/>
+        <port name="r_dat[2]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[2]"/>
+        <port name="r_dat[3]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[3]"/>
+        <port name="r_dat[4]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[4]"/>
+        <port name="r_dat[5]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[5]"/>
+        <port name="r_dat[6]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[6]"/>
+        <port name="r_dat[7]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[7]"/>
+        <port name="t_dav" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_4|t_dav"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_update" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_update"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr" source="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr"/>
+      </inputs>
+      <outputs>
+        <port name="r_ena"/>
+        <port name="r_ena"/>
+        <port name="t_ena"/>
+        <port name="t_ena"/>
+        <port name="t_dat[0]"/>
+        <port name="t_dat[1]"/>
+        <port name="t_dat[2]"/>
+        <port name="t_dat[3]"/>
+        <port name="t_dat[4]"/>
+        <port name="t_dat[5]"/>
+        <port name="t_dat[6]"/>
+        <port name="t_dat[7]"/>
+        <port name="t_pause"/>
+        <port name="t_pause"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdo"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_irq"/>
+        <port name="jtag.bp.inst_jtag_uart_4_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_out_0_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|alt_jtag_atlantic:MPSoC_jtag_uart_1_alt_jtag_atlantic" instance_id="4" mfg_id="110" node_id="128" sld_node_info="0xC006E04" version="1">
+      <parameters>
+        <parameter name="INSTANCE_ID" type="dec" value="0"/>
+        <parameter name="SLD_NODE_INFO" type="ubin" value="00001100000000000110111000000000"/>
+        <parameter name="SLD_AUTO_INSTANCE_INDEX" type="string" value="YES"/>
+        <parameter name="LOG2_TXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="LOG2_RXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="RESERVED" type="dec" value="0"/>
+        <parameter name="DATA_WIDTH" type="dec" value="8"/>
+        <parameter name="NODE_IR_WIDTH" type="dec" value="1"/>
+        <parameter name="SCAN_LENGTH" type="dec" value="11"/>
+      </parameters>
+      <inputs>
+        <port name="clk" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|clk"/>
+        <port name="rst_n" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|rst_n"/>
+        <port name="r_val" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|r_val"/>
+        <port name="r_dat[0]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[0]"/>
+        <port name="r_dat[1]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[1]"/>
+        <port name="r_dat[2]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[2]"/>
+        <port name="r_dat[3]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[3]"/>
+        <port name="r_dat[4]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[4]"/>
+        <port name="r_dat[5]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[5]"/>
+        <port name="r_dat[6]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[6]"/>
+        <port name="r_dat[7]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[7]"/>
+        <port name="t_dav" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_5|t_dav"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_update" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_update"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr" source="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr"/>
+      </inputs>
+      <outputs>
+        <port name="r_ena"/>
+        <port name="r_ena"/>
+        <port name="t_ena"/>
+        <port name="t_ena"/>
+        <port name="t_dat[0]"/>
+        <port name="t_dat[1]"/>
+        <port name="t_dat[2]"/>
+        <port name="t_dat[3]"/>
+        <port name="t_dat[4]"/>
+        <port name="t_dat[5]"/>
+        <port name="t_dat[6]"/>
+        <port name="t_dat[7]"/>
+        <port name="t_pause"/>
+        <port name="t_pause"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdo"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_irq"/>
+        <port name="jtag.bp.inst_jtag_uart_5_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_out_0_"/>
+      </outputs>
+    </node>
+    <node hpath="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|alt_jtag_atlantic:MPSoC_jtag_uart_1_alt_jtag_atlantic" instance_id="5" mfg_id="110" node_id="128" sld_node_info="0xC006E05" version="1">
+      <parameters>
+        <parameter name="INSTANCE_ID" type="dec" value="0"/>
+        <parameter name="SLD_NODE_INFO" type="ubin" value="00001100000000000110111000000000"/>
+        <parameter name="SLD_AUTO_INSTANCE_INDEX" type="string" value="YES"/>
+        <parameter name="LOG2_TXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="LOG2_RXFIFO_DEPTH" type="dec" value="6"/>
+        <parameter name="RESERVED" type="dec" value="0"/>
+        <parameter name="DATA_WIDTH" type="dec" value="8"/>
+        <parameter name="NODE_IR_WIDTH" type="dec" value="1"/>
+        <parameter name="SCAN_LENGTH" type="dec" value="11"/>
+      </parameters>
+      <inputs>
+        <port name="clk" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|clk"/>
+        <port name="rst_n" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|rst_n"/>
+        <port name="r_val" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|r_val"/>
+        <port name="r_dat[0]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[0]"/>
+        <port name="r_dat[1]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[1]"/>
+        <port name="r_dat[2]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[2]"/>
+        <port name="r_dat[3]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[3]"/>
+        <port name="r_dat[4]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[4]"/>
+        <port name="r_dat[5]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[5]"/>
+        <port name="r_dat[6]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[6]"/>
+        <port name="r_dat[7]" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|MPSoC_jtag_uart_1_scfifo_w:the_MPSoC_jtag_uart_1_scfifo_w|r_dat[7]"/>
+        <port name="t_dav" source="MPSoC:inst|MPSoC_jtag_uart_1:jtag_uart_6|t_dav"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_raw_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_tck"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdi"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_rti"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_shift"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_update" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_update"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_usr1"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_clr"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_ena"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_in_0_"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_cdr"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_sdr"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr" source="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_jtag_state_udr"/>
+      </inputs>
+      <outputs>
+        <port name="r_ena"/>
+        <port name="r_ena"/>
+        <port name="t_ena"/>
+        <port name="t_ena"/>
+        <port name="t_dat[0]"/>
+        <port name="t_dat[1]"/>
+        <port name="t_dat[2]"/>
+        <port name="t_dat[3]"/>
+        <port name="t_dat[4]"/>
+        <port name="t_dat[5]"/>
+        <port name="t_dat[6]"/>
+        <port name="t_dat[7]"/>
+        <port name="t_pause"/>
+        <port name="t_pause"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_tdo"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_irq"/>
+        <port name="jtag.bp.inst_jtag_uart_6_MPSoC_jtag_uart_1_alt_jtag_atlantic_ir_out_0_"/>
+      </outputs>
+    </node>
+  </node_info>
+  <sld_infos>
+    <sld_info hpath="MPSoC:inst" name="inst">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME MPSoC HAS_SOPCINFO 1 GENERATION_ID 1773046779"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

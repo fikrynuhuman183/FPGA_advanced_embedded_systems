@@ -1,0 +1,206 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/ --output-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/ --report-file=bsf:C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC.qsys
+Progress: Loading practical_1_part_2_jpeg_encoding/SoC.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 13.1]
+Progress: Parameterizing module clock
+Progress: Adding cpu [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module sdram
+Progress: Adding timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding pio [altera_avalon_pio 13.1]
+Progress: Parameterizing module pio
+Progress: Adding altpll_0 [altpll 13.1]
+Progress: Parameterizing module altpll_0
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding master_clock_crossing_bridge [altera_avalon_mm_clock_crossing_bridge 13.1]
+Progress: Parameterizing module master_clock_crossing_bridge
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SoC.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: SoC.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Warning: SoC.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: SoC.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: SoC.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/ --output-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC.html --report-file=sopcinfo:C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC.sopcinfo --report-file=cmp:C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC.cmp --report-file=qip:C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/SoC.qip --report-file=svd --report-file=regmap:C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/SoC.regmap --report-file=debuginfo:C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/SoC.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC.qsys --language=VERILOG
+Progress: Loading practical_1_part_2_jpeg_encoding/SoC.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 13.1]
+Progress: Parameterizing module clock
+Progress: Adding cpu [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module sdram
+Progress: Adding timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding pio [altera_avalon_pio 13.1]
+Progress: Parameterizing module pio
+Progress: Adding altpll_0 [altpll 13.1]
+Progress: Parameterizing module altpll_0
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding master_clock_crossing_bridge [altera_avalon_mm_clock_crossing_bridge 13.1]
+Progress: Parameterizing module master_clock_crossing_bridge
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SoC.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: SoC.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Warning: SoC.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: SoC.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: SoC.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: SoC: Generating SoC "SoC" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 9 modules, 32 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 7 modules, 22 connections
+Info: merlin_translator_transform: After transform: 15 modules, 50 connections
+Info: merlin_domain_transform: After transform: 31 modules, 141 connections
+Info: merlin_router_transform: After transform: 39 modules, 169 connections
+Info: merlin_network_to_switch_transform: After transform: 54 modules, 205 connections
+Info: Inserting clock-crossing logic between cmd_xbar_demux_001.src4 and cmd_xbar_mux_004.sink0
+Info: Inserting clock-crossing logic between rsp_xbar_demux_004.src0 and rsp_xbar_mux_001.sink4
+Info: com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: 56 modules, 217 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 61 modules, 279 connections
+Info: merlin_hierarchy_transform: After transform: 10 modules, 38 connections
+Info: merlin_initial_interconnect_transform: After transform: 5 modules, 8 connections
+Info: merlin_translator_transform: After transform: 8 modules, 17 connections
+Info: merlin_domain_transform: After transform: 14 modules, 46 connections
+Info: merlin_router_transform: After transform: 17 modules, 55 connections
+Info: merlin_traffic_limiter_transform: After transform: 18 modules, 59 connections
+Info: merlin_network_to_switch_transform: After transform: 23 modules, 69 connections
+Info: limiter_update_transform: After transform: 23 modules, 70 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 25 modules, 93 connections
+Info: merlin_hierarchy_transform: After transform: 11 modules, 41 connections
+Info: merlin_mm_transform: After transform: 11 modules, 41 connections
+Info: merlin_interrupt_mapper_transform: After transform: 12 modules, 45 connections
+Info: merlin_interrupt_sync_transform: After transform: 13 modules, 51 connections
+Info: reset_adaptation_transform: After transform: 18 modules, 60 connections
+Info: cpu: Starting RTL generation for module 'SoC_cpu'
+Info: cpu:   Generation command is [exec C:/altera/13.1/quartus/bin/eperlcmd.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=SoC_cpu --dir=C:/Users/DELL/AppData/Local/Temp/alt0418_7710114377257981465.dir/0001_cpu_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0418_7710114377257981465.dir/0001_cpu_gen//SoC_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2025.11.26 13:21:34 (*) Starting Nios II generation
+Info: cpu: # 2025.11.26 13:21:34 (*)   Checking for plaintext license.
+Info: cpu: # 2025.11.26 13:21:35 (*)   Couldn't query license setup in Quartus directory C:/altera/13.1/quartus
+Info: cpu: # 2025.11.26 13:21:35 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2025.11.26 13:21:35 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2025.11.26 13:21:35 (*)   Plaintext license not found.
+Info: cpu: # 2025.11.26 13:21:35 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2025.11.26 13:21:35 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2025.11.26 13:21:35 (*)   Creating all objects for CPU
+Info: cpu: # 2025.11.26 13:21:37 (*)   Generating RTL from CPU objects
+Info: cpu: # 2025.11.26 13:21:37 (*)   Creating plain-text RTL
+Info: cpu: # 2025.11.26 13:21:39 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'SoC_cpu'
+Info: cpu: "SoC" instantiated altera_nios2_qsys "cpu"
+Info: sdram: Starting RTL generation for module 'SoC_sdram'
+Info: sdram:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=SoC_sdram --dir=C:/Users/DELL/AppData/Local/Temp/alt0418_7710114377257981465.dir/0002_sdram_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0418_7710114377257981465.dir/0002_sdram_gen//SoC_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'SoC_sdram'
+Info: sdram: "SoC" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: timer: Starting RTL generation for module 'SoC_timer'
+Info: timer:   Generation command is [exec C:/altera/13.1/quartus/bin//perl/bin/perl.exe -I C:/altera/13.1/quartus/bin//perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=SoC_timer --dir=C:/Users/DELL/AppData/Local/Temp/alt0418_7710114377257981465.dir/0003_timer_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0418_7710114377257981465.dir/0003_timer_gen//SoC_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: timer: Done RTL generation for module 'SoC_timer'
+Info: timer: "SoC" instantiated altera_avalon_timer "timer"
+Info: sysid_qsys_0: "SoC" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: pio: Starting RTL generation for module 'SoC_pio'
+Info: pio:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=SoC_pio --dir=C:/Users/DELL/AppData/Local/Temp/alt0418_7710114377257981465.dir/0005_pio_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0418_7710114377257981465.dir/0005_pio_gen//SoC_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: pio: Done RTL generation for module 'SoC_pio'
+Info: pio: "SoC" instantiated altera_avalon_pio "pio"
+Info: altpll_0: "SoC" instantiated altpll "altpll_0"
+Info: jtag_uart: Starting RTL generation for module 'SoC_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=SoC_jtag_uart --dir=C:/Users/DELL/AppData/Local/Temp/alt0418_7710114377257981465.dir/0008_jtag_uart_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0418_7710114377257981465.dir/0008_jtag_uart_gen//SoC_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'SoC_jtag_uart'
+Info: jtag_uart: "SoC" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: master_clock_crossing_bridge: "SoC" instantiated altera_avalon_mm_clock_crossing_bridge "master_clock_crossing_bridge"
+Info: pipeline_bridge_swap_transform: After transform: 54 modules, 174 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 54 modules, 174 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 54 modules, 174 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 54 modules, 174 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 54 modules, 174 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 54 modules, 174 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 54 modules, 174 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 54 modules, 174 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 54 modules, 174 connections
+Info: mm_interconnect_0: "SoC" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: pipeline_bridge_swap_transform: After transform: 20 modules, 62 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 20 modules, 62 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 20 modules, 62 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 20 modules, 62 connections
+Info: mm_interconnect_1: "SoC" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_1"
+Info: irq_mapper: "SoC" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_synchronizer: "SoC" instantiated altera_irq_clock_crosser "irq_synchronizer"
+Info: rst_controller: "SoC" instantiated altera_reset_controller "rst_controller"
+Info: cpu_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_instruction_master_translator"
+Info: cpu_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "cpu_jtag_debug_module_translator"
+Info: cpu_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_instruction_master_translator_avalon_universal_master_0_agent"
+Info: cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "mm_interconnect_0" instantiated altera_merlin_router "id_router_002"
+Info: id_router_004: "mm_interconnect_0" instantiated altera_merlin_router "id_router_004"
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_004"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_004"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: addr_router: "mm_interconnect_1" instantiated altera_merlin_router "addr_router"
+Info: id_router: "mm_interconnect_1" instantiated altera_merlin_router "id_router"
+Info: limiter: "mm_interconnect_1" instantiated altera_merlin_traffic_limiter "limiter"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_xbar_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_1_part_2_jpeg_encoding/SoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: SoC: Done "SoC" with 41 modules, 59 files, 1168878 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

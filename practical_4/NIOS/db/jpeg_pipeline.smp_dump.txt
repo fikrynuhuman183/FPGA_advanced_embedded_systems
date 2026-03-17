@@ -1,0 +1,89 @@
+
+State Machine - |jpeg_pipeline|MPSoC:inst|MPSoC_sdram_controller_stage1:sdram_controller_stage1|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |jpeg_pipeline|MPSoC:inst|MPSoC_sdram_controller_stage1:sdram_controller_stage1|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |jpeg_pipeline|MPSoC:inst|MPSoC_sdram_controller_stage1:sdram_controller_stage1|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |jpeg_pipeline|MPSoC:inst|MPSoC_sdram_controller_stage1:sdram_controller_stage1|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |jpeg_pipeline|MPSoC:inst|MPSoC_cpu_stage6:cpu_stage6|MPSoC_cpu_stage6_nios2_oci:the_MPSoC_cpu_stage6_nios2_oci|MPSoC_cpu_stage6_jtag_debug_module_wrapper:the_MPSoC_cpu_stage6_jtag_debug_module_wrapper|MPSoC_cpu_stage6_jtag_debug_module_tck:the_MPSoC_cpu_stage6_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |jpeg_pipeline|MPSoC:inst|MPSoC_cpu_stage5:cpu_stage5|MPSoC_cpu_stage5_nios2_oci:the_MPSoC_cpu_stage5_nios2_oci|MPSoC_cpu_stage5_jtag_debug_module_wrapper:the_MPSoC_cpu_stage5_jtag_debug_module_wrapper|MPSoC_cpu_stage5_jtag_debug_module_tck:the_MPSoC_cpu_stage5_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |jpeg_pipeline|MPSoC:inst|MPSoC_cpu_stage4:cpu_stage4|MPSoC_cpu_stage4_nios2_oci:the_MPSoC_cpu_stage4_nios2_oci|MPSoC_cpu_stage4_jtag_debug_module_wrapper:the_MPSoC_cpu_stage4_jtag_debug_module_wrapper|MPSoC_cpu_stage4_jtag_debug_module_tck:the_MPSoC_cpu_stage4_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |jpeg_pipeline|MPSoC:inst|MPSoC_cpu_stage3:cpu_stage3|MPSoC_cpu_stage3_nios2_oci:the_MPSoC_cpu_stage3_nios2_oci|MPSoC_cpu_stage3_jtag_debug_module_wrapper:the_MPSoC_cpu_stage3_jtag_debug_module_wrapper|MPSoC_cpu_stage3_jtag_debug_module_tck:the_MPSoC_cpu_stage3_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |jpeg_pipeline|MPSoC:inst|MPSoC_cpu_stage2:cpu_stage2|MPSoC_cpu_stage2_nios2_oci:the_MPSoC_cpu_stage2_nios2_oci|MPSoC_cpu_stage2_jtag_debug_module_wrapper:the_MPSoC_cpu_stage2_jtag_debug_module_wrapper|MPSoC_cpu_stage2_jtag_debug_module_tck:the_MPSoC_cpu_stage2_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |jpeg_pipeline|MPSoC:inst|MPSoC_cpu_stage1:cpu_stage1|MPSoC_cpu_stage1_nios2_oci:the_MPSoC_cpu_stage1_nios2_oci|MPSoC_cpu_stage1_jtag_debug_module_wrapper:the_MPSoC_cpu_stage1_jtag_debug_module_wrapper|MPSoC_cpu_stage1_jtag_debug_module_tck:the_MPSoC_cpu_stage1_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

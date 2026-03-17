@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jpeg/jpeg_addr&apos; to &apos;jpeg_addr.h&apos;" description="Rename resource &apos;jpeg_addr&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="jpeg_addr" name="jpeg_addr.h" stamp="1766389834132" updateReferences="true"/>
+</session>

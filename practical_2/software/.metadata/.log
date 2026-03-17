@@ -1,0 +1,332 @@
+!SESSION 2025-12-28 12:13:22.702 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-28 12:55:07.088
+!MESSAGE Indexed 'crc_custom_bsp' (82 sources, 60 headers) in 0.74 sec: 954 declarations; 2,313 references; 117 unresolved inclusions; 5 syntax errors; 198 unresolved names (5.71%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-28 12:55:12.110
+!MESSAGE Indexed 'crc_custom' (0 sources, 13 headers) in 0.01 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-28 13:30:34.439
+!MESSAGE Indexed 'crc_bsp' (82 sources, 107 headers) in 1.22 sec: 2,188 declarations; 3,468 references; 109 unresolved inclusions; 5 syntax errors; 199 unresolved names (3.40%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-28 13:30:35.780
+!MESSAGE Indexed 'crc' (0 sources, 13 headers) in 0.02 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.core 4 0 2025-12-28 13:35:43.469
+!MESSAGE Error executing 'nios2-bsp-generate-files --bsp-dir . --settings settings.bsp', unexpected return code 1.
+
+Error message:
+
+SEVERE: [Error] hal: <b>hal.sys_clk_timer</b> (high_resolution_timer) out of range. Valid ranges: [timer:timer, none:none]
+SEVERE: [Error] hal: <b>hal.sys_clk_timer</b> (high_resolution_timer) out of range. Valid ranges: [timer:timer, none:none]
+SEVERE: nios2-bsp-generate-files failed.
+
+
+!ENTRY org.eclipse.cdt.ui 4 4 2025-12-28 13:35:56.560
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/crc_bsp/HAL/src/alt_load.c' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:320)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:194)
+	at org.eclipse.core.internal.resources.Resource.findMarkers(Resource.java:1013)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.openErrorInEditor(BuildConsolePage.java:628)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.showError(BuildConsolePage.java:601)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.setDocument(BuildConsolePage.java:173)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.selectionChanged(BuildConsolePage.java:441)
+	at org.eclipse.ui.internal.AbstractSelectionService.fireSelection(AbstractSelectionService.java:156)
+	at org.eclipse.ui.internal.AbstractSelectionService$1.selectionChanged(AbstractSelectionService.java:62)
+	at org.eclipse.jface.viewers.Viewer$2.run(Viewer.java:164)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:162)
+	at org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2188)
+	at org.eclipse.jface.viewers.StructuredViewer.handleSelect(StructuredViewer.java:1211)
+	at org.eclipse.ui.navigator.CommonViewer.handleSelect(CommonViewer.java:478)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetSelected(StructuredViewer.java:1241)
+	at org.eclipse.jface.util.OpenStrategy.fireSelectionEvent(OpenStrategy.java:239)
+	at org.eclipse.jface.util.OpenStrategy.access$4(OpenStrategy.java:233)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:403)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2025-12-28 13:35:56.560
+!MESSAGE Resource '/crc_bsp/HAL/src/alt_load.c' does not exist.
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-28 13:36:22.074
+!MESSAGE Indexed 'crc_f_bsp' (82 sources, 98 headers) in 0.81 sec: 1,591 declarations; 3,073 references; 87 unresolved inclusions; 191 syntax errors; 202 unresolved names (4.15%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-28 13:36:23.223
+!MESSAGE Indexed 'crc_f' (1 sources, 13 headers) in 0.00 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 13:39:05.852
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000020 --id=0x0 --timestamp=1766908970]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 13:39:08.388
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000020 --id=0x0 --timestamp=1766908970 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_f/crc_f.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-28 13:44:29.208
+!MESSAGE Indexed 'crc_ff_bsp' (82 sources, 107 headers) in 0.70 sec: 2,188 declarations; 3,468 references; 109 unresolved inclusions; 5 syntax errors; 199 unresolved names (3.40%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-28 13:44:30.490
+!MESSAGE Indexed 'crc_ff' (0 sources, 13 headers) in 0.00 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 13:45:39.231
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000020 --id=0x0 --timestamp=1766908970]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 13:45:41.361
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000020 --id=0x0 --timestamp=1766908970 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_ff/crc_ff.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2025-12-28 14:05:13.393
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "0", expected: "1766908970".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2025-12-28 14:05:13.393
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "0", expected: "1766908970".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-28 14:05:54.866
+!MESSAGE Indexed 'crc_fff_bsp' (82 sources, 111 headers) in 0.97 sec: 2,372 declarations; 3,805 references; 78 unresolved inclusions; 59 syntax errors; 162 unresolved names (2.56%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-12-28 14:05:55.858
+!MESSAGE Indexed 'crc_fff' (0 sources, 13 headers) in 0.01 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:07:26.383
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766910022]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:07:28.498
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766910022 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_fff/crc_fff.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:19:21.089
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766910022]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:19:23.287
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766910022 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_fff/crc_fff.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:27:47.150
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766910022]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:27:49.313
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766910022 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_fff/crc_fff.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:28:24.754
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:28:25.359
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766910022]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:28:27.648
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766910022 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_fff/crc_fff.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2025-12-28 14:36:22.855
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "1766912425", expected: "1766910022".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2025-12-28 14:36:22.857
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "1766912425", expected: "1766910022".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:37:17.384
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766912425]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:37:19.690
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766912425 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_fff/crc_fff.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2025-12-28 14:48:11.377
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "1766913299", expected: "1766912425".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2025-12-28 14:48:11.380
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception: System timestamp mismatch - connected: "1766913299", expected: "1766912425".
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.assertTrue(SystemConsoleConnectionModel.java:645)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateSystemId(SystemConsoleConnectionModel.java:631)
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:511)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:49:01.371
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766913299]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-28 14:49:03.753
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766913299 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_fff/crc_fff.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-29 12:54:34.042
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766913299]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2025-12-29 12:54:36.640
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766913299 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_fff/crc_fff.elf]
+!SESSION 2026-01-05 07:45:28.097 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-01-05 07:45:39.936
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 07:46:29.463
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766913299]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 07:46:35.054
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766913299 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_fff/crc_fff.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 07:48:29.689
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766913299]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 07:48:34.926
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766913299 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_fff/crc_fff.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 07:53:04.051
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766913299]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 07:53:09.477
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766913299 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_fff/crc_fff.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-05 07:55:15.751
+!MESSAGE Indexed 'crc_aaa_bsp' (82 sources, 60 headers) in 1.27 sec: 955 declarations; 2,351 references; 117 unresolved inclusions; 5 syntax errors; 198 unresolved names (5.65%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-05 07:55:19.991
+!MESSAGE Indexed 'crc_aaa' (0 sources, 13 headers) in 0.00 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 07:57:11.113
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766913299]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 07:57:16.565
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766913299 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_aaa/crc_aaa.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 07:58:22.512
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766913299]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 07:58:27.758
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766913299 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_aaa/crc_aaa.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 13:28:53.017
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766913299]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 13:28:58.457
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766913299 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_aaa/crc_aaa.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-05 13:35:41.293
+!MESSAGE Indexed 'crc_ttt_bsp' (82 sources, 115 headers) in 2.20 sec: 2,703 declarations; 4,466 references; 62 unresolved inclusions; 448 syntax errors; 240 unresolved names (3.24%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-05 13:35:42.356
+!MESSAGE Indexed 'crc_ttt' (0 sources, 13 headers) in 0.02 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 13:37:50.558
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0 --timestamp=1766913299]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 13:37:55.888
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --timestamp=1766913299 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_ttt/crc_ttt.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 13:38:45.344
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 13:38:46.818
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x10000040]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 13:38:51.817
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x10000040 /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_ttt/crc_ttt.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2026-01-05 13:38:59.648
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x10000040, /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_ttt/crc_ttt.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2026-01-05 13:38:59.648
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 13:40:07.366
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x10000040 --id=0x0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2026-01-05 13:40:12.523
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x10000040 --id=0x0 --reset-target /cygdrive/c/Users/DELL/Documents/advanced_embedded_systems/practical_2/software/crc_ttt/crc_ttt.elf]

@@ -1,0 +1,604 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/ --output-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/ --report-file=bsf:C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC.qsys
+Progress: Loading NIOS/MPSoC.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu_stage1 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage1
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding fifo_1to2_Y [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to2_Y
+Progress: Adding fifo_1to2_Cb [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to2_Cb
+Progress: Adding fifo_1to2_Cr [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to2_Cr
+Progress: Adding fifo_2to3 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_2to3
+Progress: Adding fifo_3to4 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_3to4
+Progress: Adding fifo_4to5 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_4to5
+Progress: Adding fifo_5to6_data [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_5to6_data
+Progress: Adding fifo_5to6_done [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_5to6_done
+Progress: Adding fifo_1to4_param [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to4_param
+Progress: Adding fifo_1to5_param [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to5_param
+Progress: Adding fifo_1to6_fname [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to6_fname
+Progress: Adding timer_1 [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer_1
+Progress: Adding cpu_stage2 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage2
+Progress: Adding cpu_stage3 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage3
+Progress: Adding cpu_stage4 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage4
+Progress: Adding cpu_stage5 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage5
+Progress: Adding cpu_stage6 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage6
+Progress: Adding ram_stage1 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage1
+Progress: Adding ram_stage2 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage2
+Progress: Adding ram_stage3 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage3
+Progress: Adding ram_stage4 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage4
+Progress: Adding ram_stage5 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage5
+Progress: Adding ram_stage6 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage6
+Progress: Adding sdram_controller_stage1 [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module sdram_controller_stage1
+Progress: Adding altpll_0 [altpll 13.1]
+Progress: Parameterizing module altpll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: MPSoC.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: MPSoC.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Warning: MPSoC.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Warning: MPSoC.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: MPSoC.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: MPSoC.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/ --output-directory=C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC.html --report-file=sopcinfo:C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC.sopcinfo --report-file=cmp:C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC.cmp --report-file=qip:C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/MPSoC.qip --report-file=svd --report-file=regmap:C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/MPSoC.regmap --report-file=debuginfo:C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/MPSoC.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC.qsys --language=VERILOG
+Progress: Loading NIOS/MPSoC.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu_stage1 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage1
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding fifo_1to2_Y [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to2_Y
+Progress: Adding fifo_1to2_Cb [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to2_Cb
+Progress: Adding fifo_1to2_Cr [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to2_Cr
+Progress: Adding fifo_2to3 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_2to3
+Progress: Adding fifo_3to4 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_3to4
+Progress: Adding fifo_4to5 [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_4to5
+Progress: Adding fifo_5to6_data [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_5to6_data
+Progress: Adding fifo_5to6_done [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_5to6_done
+Progress: Adding fifo_1to4_param [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to4_param
+Progress: Adding fifo_1to5_param [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to5_param
+Progress: Adding fifo_1to6_fname [altera_avalon_fifo 13.1]
+Progress: Parameterizing module fifo_1to6_fname
+Progress: Adding timer_1 [altera_avalon_timer 13.1]
+Progress: Parameterizing module timer_1
+Progress: Adding cpu_stage2 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage2
+Progress: Adding cpu_stage3 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage3
+Progress: Adding cpu_stage4 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage4
+Progress: Adding cpu_stage5 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage5
+Progress: Adding cpu_stage6 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module cpu_stage6
+Progress: Adding ram_stage1 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage1
+Progress: Adding ram_stage2 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage2
+Progress: Adding ram_stage3 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage3
+Progress: Adding ram_stage4 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage4
+Progress: Adding ram_stage5 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage5
+Progress: Adding ram_stage6 [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module ram_stage6
+Progress: Adding sdram_controller_stage1 [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module sdram_controller_stage1
+Progress: Adding altpll_0 [altpll 13.1]
+Progress: Parameterizing module altpll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: MPSoC.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: MPSoC.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Warning: MPSoC.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Warning: MPSoC.altpll_0: altpll_0.areset_conduit must be exported, or connected to a matching conduit.
+Warning: MPSoC.altpll_0: altpll_0.locked_conduit must be exported, or connected to a matching conduit.
+Warning: MPSoC.altpll_0: altpll_0.phasedone_conduit must be exported, or connected to a matching conduit.
+Info: MPSoC: Generating MPSoC "MPSoC" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 29 modules, 170 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 29 modules, 166 connections
+Info: merlin_translator_transform: After transform: 101 modules, 401 connections
+Info: merlin_domain_transform: After transform: 235 modules, 1171 connections
+Info: merlin_router_transform: After transform: 307 modules, 1406 connections
+Info: merlin_network_to_switch_transform: After transform: 450 modules, 1735 connections
+Info: Inserting clock-crossing logic between cmd_xbar_demux.src2 and cmd_xbar_mux_002.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_001.src2 and cmd_xbar_mux_002.sink1
+Info: Inserting clock-crossing logic between rsp_xbar_demux_002.src0 and rsp_xbar_mux.sink2
+Info: Inserting clock-crossing logic between rsp_xbar_demux_002.src1 and rsp_xbar_mux_001.sink2
+Info: com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: 454 modules, 1763 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 464 modules, 2240 connections
+Info: merlin_hierarchy_transform: After transform: 30 modules, 176 connections
+Info: merlin_mm_transform: After transform: 30 modules, 176 connections
+Info: merlin_interrupt_mapper_transform: After transform: 36 modules, 200 connections
+Info: reset_adaptation_transform: After transform: 51 modules, 249 connections
+Info: cpu_stage1: Starting RTL generation for module 'MPSoC_cpu_stage1'
+Info: cpu_stage1:   Generation command is [exec C:/altera/13.1/quartus/bin/eperlcmd.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=MPSoC_cpu_stage1 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0001_cpu_stage1_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0001_cpu_stage1_gen//MPSoC_cpu_stage1_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu_stage1: # 2026.03.02 10:34:07 (*) Starting Nios II generation
+Info: cpu_stage1: # 2026.03.02 10:34:07 (*)   Checking for plaintext license.
+Info: cpu_stage1: # 2026.03.02 10:34:08 (*)   Couldn't query license setup in Quartus directory C:/altera/13.1/quartus
+Info: cpu_stage1: # 2026.03.02 10:34:08 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu_stage1: # 2026.03.02 10:34:08 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu_stage1: # 2026.03.02 10:34:08 (*)   Plaintext license not found.
+Info: cpu_stage1: # 2026.03.02 10:34:08 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu_stage1: # 2026.03.02 10:34:08 (*)   Elaborating CPU configuration settings
+Info: cpu_stage1: # 2026.03.02 10:34:08 (*)   Creating all objects for CPU
+Info: cpu_stage1: # 2026.03.02 10:34:09 (*)   Generating RTL from CPU objects
+Info: cpu_stage1: # 2026.03.02 10:34:09 (*)   Creating plain-text RTL
+Info: cpu_stage1: # 2026.03.02 10:34:10 (*) Done Nios II generation
+Info: cpu_stage1: Done RTL generation for module 'MPSoC_cpu_stage1'
+Info: cpu_stage1: "MPSoC" instantiated altera_nios2_qsys "cpu_stage1"
+Info: jtag_uart_0: Starting RTL generation for module 'MPSoC_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=MPSoC_jtag_uart_0 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0002_jtag_uart_0_gen//MPSoC_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'MPSoC_jtag_uart_0'
+Info: jtag_uart_0: "MPSoC" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: sysid_qsys_0: "MPSoC" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: fifo_1to2_Y: Starting RTL generation for module 'MPSoC_fifo_1to2_Y'
+Info: fifo_1to2_Y:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=MPSoC_fifo_1to2_Y --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0004_fifo_1to2_Y_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0004_fifo_1to2_Y_gen//MPSoC_fifo_1to2_Y_component_configuration.pl  --do_build_sim=0  ]
+Info: fifo_1to2_Y: Done RTL generation for module 'MPSoC_fifo_1to2_Y'
+Info: fifo_1to2_Y: "MPSoC" instantiated altera_avalon_fifo "fifo_1to2_Y"
+Info: fifo_5to6_data: Starting RTL generation for module 'MPSoC_fifo_5to6_data'
+Info: fifo_5to6_data:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=MPSoC_fifo_5to6_data --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0005_fifo_5to6_data_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0005_fifo_5to6_data_gen//MPSoC_fifo_5to6_data_component_configuration.pl  --do_build_sim=0  ]
+Info: fifo_5to6_data: Done RTL generation for module 'MPSoC_fifo_5to6_data'
+Info: fifo_5to6_data: "MPSoC" instantiated altera_avalon_fifo "fifo_5to6_data"
+Info: fifo_5to6_done: Starting RTL generation for module 'MPSoC_fifo_5to6_done'
+Info: fifo_5to6_done:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=MPSoC_fifo_5to6_done --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0006_fifo_5to6_done_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0006_fifo_5to6_done_gen//MPSoC_fifo_5to6_done_component_configuration.pl  --do_build_sim=0  ]
+Info: fifo_5to6_done: Done RTL generation for module 'MPSoC_fifo_5to6_done'
+Info: fifo_5to6_done: "MPSoC" instantiated altera_avalon_fifo "fifo_5to6_done"
+Info: fifo_1to4_param: Starting RTL generation for module 'MPSoC_fifo_1to4_param'
+Info: fifo_1to4_param:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=MPSoC_fifo_1to4_param --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0007_fifo_1to4_param_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0007_fifo_1to4_param_gen//MPSoC_fifo_1to4_param_component_configuration.pl  --do_build_sim=0  ]
+Info: fifo_1to4_param: Done RTL generation for module 'MPSoC_fifo_1to4_param'
+Info: fifo_1to4_param: "MPSoC" instantiated altera_avalon_fifo "fifo_1to4_param"
+Info: fifo_1to6_fname: Starting RTL generation for module 'MPSoC_fifo_1to6_fname'
+Info: fifo_1to6_fname:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=MPSoC_fifo_1to6_fname --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0008_fifo_1to6_fname_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0008_fifo_1to6_fname_gen//MPSoC_fifo_1to6_fname_component_configuration.pl  --do_build_sim=0  ]
+Info: fifo_1to6_fname: Done RTL generation for module 'MPSoC_fifo_1to6_fname'
+Info: fifo_1to6_fname: "MPSoC" instantiated altera_avalon_fifo "fifo_1to6_fname"
+Info: timer_1: Starting RTL generation for module 'MPSoC_timer_1'
+Info: timer_1:   Generation command is [exec C:/altera/13.1/quartus/bin//perl/bin/perl.exe -I C:/altera/13.1/quartus/bin//perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=MPSoC_timer_1 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0009_timer_1_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0009_timer_1_gen//MPSoC_timer_1_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_1: Done RTL generation for module 'MPSoC_timer_1'
+Info: timer_1: "MPSoC" instantiated altera_avalon_timer "timer_1"
+Info: cpu_stage2: Starting RTL generation for module 'MPSoC_cpu_stage2'
+Info: cpu_stage2:   Generation command is [exec C:/altera/13.1/quartus/bin/eperlcmd.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=MPSoC_cpu_stage2 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0010_cpu_stage2_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0010_cpu_stage2_gen//MPSoC_cpu_stage2_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu_stage2: # 2026.03.02 10:34:13 (*) Starting Nios II generation
+Info: cpu_stage2: # 2026.03.02 10:34:13 (*)   Checking for plaintext license.
+Info: cpu_stage2: # 2026.03.02 10:34:14 (*)   Couldn't query license setup in Quartus directory C:/altera/13.1/quartus
+Info: cpu_stage2: # 2026.03.02 10:34:14 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu_stage2: # 2026.03.02 10:34:14 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu_stage2: # 2026.03.02 10:34:14 (*)   Plaintext license not found.
+Info: cpu_stage2: # 2026.03.02 10:34:14 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu_stage2: # 2026.03.02 10:34:14 (*)   Elaborating CPU configuration settings
+Info: cpu_stage2: # 2026.03.02 10:34:14 (*)   Creating all objects for CPU
+Info: cpu_stage2: # 2026.03.02 10:34:14 (*)   Generating RTL from CPU objects
+Info: cpu_stage2: # 2026.03.02 10:34:14 (*)   Creating plain-text RTL
+Info: cpu_stage2: # 2026.03.02 10:34:15 (*) Done Nios II generation
+Info: cpu_stage2: Done RTL generation for module 'MPSoC_cpu_stage2'
+Info: cpu_stage2: "MPSoC" instantiated altera_nios2_qsys "cpu_stage2"
+Info: cpu_stage3: Starting RTL generation for module 'MPSoC_cpu_stage3'
+Info: cpu_stage3:   Generation command is [exec C:/altera/13.1/quartus/bin/eperlcmd.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=MPSoC_cpu_stage3 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0011_cpu_stage3_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0011_cpu_stage3_gen//MPSoC_cpu_stage3_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu_stage3: # 2026.03.02 10:34:19 (*) Starting Nios II generation
+Info: cpu_stage3: # 2026.03.02 10:34:19 (*)   Checking for plaintext license.
+Info: cpu_stage3: # 2026.03.02 10:34:26 (*)   Couldn't query license setup in Quartus directory C:/altera/13.1/quartus
+Info: cpu_stage3: # 2026.03.02 10:34:26 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu_stage3: # 2026.03.02 10:34:26 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu_stage3: # 2026.03.02 10:34:26 (*)   Plaintext license not found.
+Info: cpu_stage3: # 2026.03.02 10:34:26 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu_stage3: # 2026.03.02 10:34:26 (*)   Elaborating CPU configuration settings
+Info: cpu_stage3: # 2026.03.02 10:34:26 (*)   Creating all objects for CPU
+Info: cpu_stage3: # 2026.03.02 10:34:27 (*)   Generating RTL from CPU objects
+Info: cpu_stage3: # 2026.03.02 10:34:27 (*)   Creating plain-text RTL
+Info: cpu_stage3: # 2026.03.02 10:34:28 (*) Done Nios II generation
+Info: cpu_stage3: Done RTL generation for module 'MPSoC_cpu_stage3'
+Info: cpu_stage3: "MPSoC" instantiated altera_nios2_qsys "cpu_stage3"
+Info: cpu_stage4: Starting RTL generation for module 'MPSoC_cpu_stage4'
+Info: cpu_stage4:   Generation command is [exec C:/altera/13.1/quartus/bin/eperlcmd.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=MPSoC_cpu_stage4 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0012_cpu_stage4_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0012_cpu_stage4_gen//MPSoC_cpu_stage4_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu_stage4: # 2026.03.02 10:34:28 (*) Starting Nios II generation
+Info: cpu_stage4: # 2026.03.02 10:34:28 (*)   Checking for plaintext license.
+Info: cpu_stage4: # 2026.03.02 10:34:29 (*)   Couldn't query license setup in Quartus directory C:/altera/13.1/quartus
+Info: cpu_stage4: # 2026.03.02 10:34:29 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu_stage4: # 2026.03.02 10:34:29 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu_stage4: # 2026.03.02 10:34:29 (*)   Plaintext license not found.
+Info: cpu_stage4: # 2026.03.02 10:34:29 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu_stage4: # 2026.03.02 10:34:29 (*)   Elaborating CPU configuration settings
+Info: cpu_stage4: # 2026.03.02 10:34:29 (*)   Creating all objects for CPU
+Info: cpu_stage4: # 2026.03.02 10:34:29 (*)   Generating RTL from CPU objects
+Info: cpu_stage4: # 2026.03.02 10:34:29 (*)   Creating plain-text RTL
+Info: cpu_stage4: # 2026.03.02 10:34:30 (*) Done Nios II generation
+Info: cpu_stage4: Done RTL generation for module 'MPSoC_cpu_stage4'
+Info: cpu_stage4: "MPSoC" instantiated altera_nios2_qsys "cpu_stage4"
+Info: cpu_stage5: Starting RTL generation for module 'MPSoC_cpu_stage5'
+Info: cpu_stage5:   Generation command is [exec C:/altera/13.1/quartus/bin/eperlcmd.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=MPSoC_cpu_stage5 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0013_cpu_stage5_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0013_cpu_stage5_gen//MPSoC_cpu_stage5_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu_stage5: # 2026.03.02 10:34:31 (*) Starting Nios II generation
+Info: cpu_stage5: # 2026.03.02 10:34:31 (*)   Checking for plaintext license.
+Info: cpu_stage5: # 2026.03.02 10:34:31 (*)   Couldn't query license setup in Quartus directory C:/altera/13.1/quartus
+Info: cpu_stage5: # 2026.03.02 10:34:31 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu_stage5: # 2026.03.02 10:34:31 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu_stage5: # 2026.03.02 10:34:31 (*)   Plaintext license not found.
+Info: cpu_stage5: # 2026.03.02 10:34:31 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu_stage5: # 2026.03.02 10:34:31 (*)   Elaborating CPU configuration settings
+Info: cpu_stage5: # 2026.03.02 10:34:31 (*)   Creating all objects for CPU
+Info: cpu_stage5: # 2026.03.02 10:34:32 (*)   Generating RTL from CPU objects
+Info: cpu_stage5: # 2026.03.02 10:34:32 (*)   Creating plain-text RTL
+Info: cpu_stage5: # 2026.03.02 10:34:33 (*) Done Nios II generation
+Info: cpu_stage5: Done RTL generation for module 'MPSoC_cpu_stage5'
+Info: cpu_stage5: "MPSoC" instantiated altera_nios2_qsys "cpu_stage5"
+Info: cpu_stage6: Starting RTL generation for module 'MPSoC_cpu_stage6'
+Info: cpu_stage6:   Generation command is [exec C:/altera/13.1/quartus/bin/eperlcmd.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=MPSoC_cpu_stage6 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0014_cpu_stage6_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0014_cpu_stage6_gen//MPSoC_cpu_stage6_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu_stage6: # 2026.03.02 10:34:34 (*) Starting Nios II generation
+Info: cpu_stage6: # 2026.03.02 10:34:34 (*)   Checking for plaintext license.
+Info: cpu_stage6: # 2026.03.02 10:34:34 (*)   Couldn't query license setup in Quartus directory C:/altera/13.1/quartus
+Info: cpu_stage6: # 2026.03.02 10:34:34 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu_stage6: # 2026.03.02 10:34:34 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu_stage6: # 2026.03.02 10:34:34 (*)   Plaintext license not found.
+Info: cpu_stage6: # 2026.03.02 10:34:34 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu_stage6: # 2026.03.02 10:34:34 (*)   Elaborating CPU configuration settings
+Info: cpu_stage6: # 2026.03.02 10:34:34 (*)   Creating all objects for CPU
+Info: cpu_stage6: # 2026.03.02 10:34:35 (*)   Generating RTL from CPU objects
+Info: cpu_stage6: # 2026.03.02 10:34:35 (*)   Creating plain-text RTL
+Info: cpu_stage6: # 2026.03.02 10:34:36 (*) Done Nios II generation
+Info: cpu_stage6: Done RTL generation for module 'MPSoC_cpu_stage6'
+Info: cpu_stage6: "MPSoC" instantiated altera_nios2_qsys "cpu_stage6"
+Info: ram_stage1: Starting RTL generation for module 'MPSoC_ram_stage1'
+Info: ram_stage1:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=MPSoC_ram_stage1 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0015_ram_stage1_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0015_ram_stage1_gen//MPSoC_ram_stage1_component_configuration.pl  --do_build_sim=0  ]
+Info: ram_stage1: Done RTL generation for module 'MPSoC_ram_stage1'
+Info: ram_stage1: "MPSoC" instantiated altera_avalon_onchip_memory2 "ram_stage1"
+Info: ram_stage2: Starting RTL generation for module 'MPSoC_ram_stage2'
+Info: ram_stage2:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=MPSoC_ram_stage2 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0016_ram_stage2_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0016_ram_stage2_gen//MPSoC_ram_stage2_component_configuration.pl  --do_build_sim=0  ]
+Info: ram_stage2: Done RTL generation for module 'MPSoC_ram_stage2'
+Info: ram_stage2: "MPSoC" instantiated altera_avalon_onchip_memory2 "ram_stage2"
+Info: ram_stage3: Starting RTL generation for module 'MPSoC_ram_stage3'
+Info: ram_stage3:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=MPSoC_ram_stage3 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0017_ram_stage3_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0017_ram_stage3_gen//MPSoC_ram_stage3_component_configuration.pl  --do_build_sim=0  ]
+Info: ram_stage3: Done RTL generation for module 'MPSoC_ram_stage3'
+Info: ram_stage3: "MPSoC" instantiated altera_avalon_onchip_memory2 "ram_stage3"
+Info: ram_stage4: Starting RTL generation for module 'MPSoC_ram_stage4'
+Info: ram_stage4:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=MPSoC_ram_stage4 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0018_ram_stage4_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0018_ram_stage4_gen//MPSoC_ram_stage4_component_configuration.pl  --do_build_sim=0  ]
+Info: ram_stage4: Done RTL generation for module 'MPSoC_ram_stage4'
+Info: ram_stage4: "MPSoC" instantiated altera_avalon_onchip_memory2 "ram_stage4"
+Info: ram_stage5: Starting RTL generation for module 'MPSoC_ram_stage5'
+Info: ram_stage5:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=MPSoC_ram_stage5 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0019_ram_stage5_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0019_ram_stage5_gen//MPSoC_ram_stage5_component_configuration.pl  --do_build_sim=0  ]
+Info: ram_stage5: Done RTL generation for module 'MPSoC_ram_stage5'
+Info: ram_stage5: "MPSoC" instantiated altera_avalon_onchip_memory2 "ram_stage5"
+Info: ram_stage6: Starting RTL generation for module 'MPSoC_ram_stage6'
+Info: ram_stage6:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=MPSoC_ram_stage6 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0020_ram_stage6_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0020_ram_stage6_gen//MPSoC_ram_stage6_component_configuration.pl  --do_build_sim=0  ]
+Info: ram_stage6: Done RTL generation for module 'MPSoC_ram_stage6'
+Info: ram_stage6: "MPSoC" instantiated altera_avalon_onchip_memory2 "ram_stage6"
+Info: sdram_controller_stage1: Starting RTL generation for module 'MPSoC_sdram_controller_stage1'
+Info: sdram_controller_stage1:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=MPSoC_sdram_controller_stage1 --dir=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0021_sdram_controller_stage1_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/DELL/AppData/Local/Temp/alt0514_9102085856060755430.dir/0021_sdram_controller_stage1_gen//MPSoC_sdram_controller_stage1_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_controller_stage1: Done RTL generation for module 'MPSoC_sdram_controller_stage1'
+Info: sdram_controller_stage1: "MPSoC" instantiated altera_avalon_new_sdram_controller "sdram_controller_stage1"
+Info: altpll_0: "MPSoC" instantiated altpll "altpll_0"
+Info: pipeline_bridge_swap_transform: After transform: 435 modules, 1505 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 435 modules, 1505 connections
+Info: mm_interconnect_0: "MPSoC" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: irq_mapper: "MPSoC" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_mapper_001: "MPSoC" instantiated altera_irq_mapper "irq_mapper_001"
+Info: rst_controller: "MPSoC" instantiated altera_reset_controller "rst_controller"
+Info: cpu_stage1_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_stage1_instruction_master_translator"
+Info: ram_stage1_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "ram_stage1_s1_translator"
+Info: cpu_stage1_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_stage1_instruction_master_translator_avalon_universal_master_0_agent"
+Info: ram_stage1_s1_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "ram_stage1_s1_translator_avalon_universal_slave_0_agent"
+Info: ram_stage1_s1_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "ram_stage1_s1_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_001"
+Info: addr_router_002: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_002"
+Info: addr_router_003: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_003"
+Info: addr_router_004: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_004"
+Info: addr_router_005: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_005"
+Info: addr_router_006: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_006"
+Info: addr_router_007: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_007"
+Info: addr_router_008: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_008"
+Info: addr_router_009: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_009"
+Info: addr_router_010: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_010"
+Info: addr_router_011: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_011"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "mm_interconnect_0" instantiated altera_merlin_router "id_router_002"
+Info: id_router_003: "mm_interconnect_0" instantiated altera_merlin_router "id_router_003"
+Info: id_router_004: "mm_interconnect_0" instantiated altera_merlin_router "id_router_004"
+Info: id_router_018: "mm_interconnect_0" instantiated altera_merlin_router "id_router_018"
+Info: id_router_020: "mm_interconnect_0" instantiated altera_merlin_router "id_router_020"
+Info: id_router_028: "mm_interconnect_0" instantiated altera_merlin_router "id_router_028"
+Info: id_router_030: "mm_interconnect_0" instantiated altera_merlin_router "id_router_030"
+Info: id_router_034: "mm_interconnect_0" instantiated altera_merlin_router "id_router_034"
+Info: id_router_036: "mm_interconnect_0" instantiated altera_merlin_router "id_router_036"
+Info: id_router_042: "mm_interconnect_0" instantiated altera_merlin_router "id_router_042"
+Info: id_router_044: "mm_interconnect_0" instantiated altera_merlin_router "id_router_044"
+Info: id_router_052: "mm_interconnect_0" instantiated altera_merlin_router "id_router_052"
+Info: id_router_054: "mm_interconnect_0" instantiated altera_merlin_router "id_router_054"
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_003"
+Info: cmd_xbar_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_004"
+Info: cmd_xbar_demux_006: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_006"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_003"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_004"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
+Info: rsp_xbar_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_004"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_002"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_003"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_004"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_006: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_006"
+Info: Reusing file C:/Users/DELL/Documents/advanced_embedded_systems/practical_4/NIOS/MPSoC/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: MPSoC: Done "MPSoC" with 78 modules, 144 files, 6596827 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

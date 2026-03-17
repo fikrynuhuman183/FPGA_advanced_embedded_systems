@@ -1,0 +1,61 @@
+/*
+ * 	FIFO queue for shared memory communication between niosII processors
+ *
+ *  	DATE		: 18-08-2016
+ *      AUTHOR	: Isuru Nawinne
+*
+*	Structure of the FIFO:
+*	___________________________________________________________________________
+*	| 	full	| 	empty	| 	count		|	|	|	|	|	|	|	|	|
+*	| 	?	| 	?		| 	?		|	|	|	|	|	|	|	|	|
+*	___________________________________________________________________________
+*/
+
+
+#include "FIFO_1.h"
+
+
+
+
+
+void READ_FIFO_1(int *buffer)
+{
+	// Wait if the fifo is empty
+	while (IORD_32DIRECT(MEM_BASE, fullp) == 1){
+
+	}
+	// Read the data
+	*buffer = IORD_32DIRECT(MEM_BASE, readp);
+
+	// Update the read pointer
+	readp+= UNIT_SIZE;
+
+	// Update "count" in shared mem
+	int count = IORD_32DIRECT(MEM_BASE, countp);
+	count--;
+	IOWR_32DIRECT(MEM_BASE, countp, count);
+	// Update the "full?" and "empty?" flags accordingly
+	// Set the empty flag if FIFO is now empty
+	if (count == 0) {
+	        IOWR_32DIRECT(MEM_BASE, emptyp, 1);
+	}
+	// Reset the full flag if FIFO now has 1 enrty less than capacity
+	IOWR_32DIRECT(MEM_BASE, fullp, 0);
+}
+
+
+
+//Initialization
+void FIFO_1_INIT()
+{
+//	writep = ???; // Initially the FIFO is empty, so start writing at the first slot
+	readp  = 3*UNIT_SIZE;
+	fullp   =   0; // SET THIS OFFSET (If there are previous FIFOs in shared memory, use Prev Fifo's STARTP + Prev Fifo's size)
+	emptyp   = fullp + UNIT_SIZE;
+	countp  = emptyp + UNIT_SIZE;
+
+	// Assigning values for the flags.
+//	IOWR_32DIRECT(MEM_BASE, fullp, 0);
+//	IOWR_32DIRECT(MEM_BASE, emptyp, 1); // The fifo is empty at the start
+//	IOWR_32DIRECT(MEM_BASE, countp, 0); // The fifo is empty at the start
+}

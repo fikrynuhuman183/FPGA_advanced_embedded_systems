@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="crc_customization">
+		<CBX_INST_ENTRY INSTANCE_NAME="|crc_customization|SoC:inst|SoC_cpu:cpu|SoC_cpu_nios2_oci:the_SoC_cpu_nios2_oci|SoC_cpu_nios2_ocimem:the_SoC_cpu_nios2_ocimem|SoC_cpu_ociram_sp_ram_module:SoC_cpu_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_pu71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|crc_customization|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_a_module:SoC_cpu_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_6of1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|crc_customization|SoC:inst|SoC_cpu:cpu|SoC_cpu_register_bank_b_module:SoC_cpu_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_7of1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|crc_customization|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_w:the_SoC_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|crc_customization|SoC:inst|altera_avalon_mm_clock_crossing_bridge:master_clock_crossing_bridge|altera_avalon_dc_fifo:rsp_fifo|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_asc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|crc_customization|SoC:inst|SoC_jtag_uart:jtag_uart|SoC_jtag_uart_scfifo_r:the_SoC_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|crc_customization|SoC:inst|altera_avalon_mm_clock_crossing_bridge:master_clock_crossing_bridge|altera_avalon_dc_fifo:cmd_fifo|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_csc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

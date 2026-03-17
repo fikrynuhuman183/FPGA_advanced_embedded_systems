@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;cpu_stage1/fifo_map.h&apos;" deleteContents="false" description="Delete resource &apos;cpu_stage1/fifo_map.h&apos;" element1="/cpu_stage1/fifo_map.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1771818380237"/>
+</session>

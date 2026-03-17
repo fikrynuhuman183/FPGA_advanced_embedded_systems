@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="175" />
+   <irq preferredWidth="47" />
+   <endaddress preferredWidth="173" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="183" />
+   <clocksource preferredWidth="183" />
+   <frequency preferredWidth="163" />
+  </columns>
+ </clocktable>
+ <window width="1936" height="1048" x="-8" y="-8" />
+ <library
+   expandedCategories="Library,Project,Library/Memories and Memory Controllers/On-Chip,Library/Memories and Memory Controllers" />
+</preferences>

@@ -1,0 +1,221 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 312 232 488 248)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "INPUT_CLOCK" (rect 5 0 82 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 280 312 456 328)
+	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
+	(text "LEDS[7..0]" (rect 5 0 60 12)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 98 4)(pt 94 8))
+		(line (pt 94 8)(pt 98 12))
+		(line (pt 98 12)(pt 94 8))
+	)
+	(flipy)
+)
+(symbol
+	(rect 320 264 352 280)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 704 168 1056 520)
+	(text "SoC_JPEG" (rect 143 -1 220 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 336 25 348)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 41 75)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 144 72))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "reset_reset_n" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 101 84 115)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 144 112))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "leds_export[7..0]" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "leds_export[7..0]" (rect 4 141 99 155)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 144 152)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(output)
+		(text "sdram_wires_addr[12..0]" (rect 0 0 143 14)(font "Arial" (font_size 8)))
+		(text "sdram_wires_addr[12..0]" (rect 4 181 147 195)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 144 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(output)
+		(text "sdram_wires_ba[1..0]" (rect 0 0 125 14)(font "Arial" (font_size 8)))
+		(text "sdram_wires_ba[1..0]" (rect 4 197 129 211)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 144 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(output)
+		(text "sdram_wires_cas_n" (rect 0 0 118 14)(font "Arial" (font_size 8)))
+		(text "sdram_wires_cas_n" (rect 4 213 122 227)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 144 224))
+	)
+	(port
+		(pt 0 240)
+		(output)
+		(text "sdram_wires_cke" (rect 0 0 102 14)(font "Arial" (font_size 8)))
+		(text "sdram_wires_cke" (rect 4 229 106 243)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 144 240))
+	)
+	(port
+		(pt 0 256)
+		(output)
+		(text "sdram_wires_cs_n" (rect 0 0 110 14)(font "Arial" (font_size 8)))
+		(text "sdram_wires_cs_n" (rect 4 245 114 259)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 144 256))
+	)
+	(port
+		(pt 0 288)
+		(output)
+		(text "sdram_wires_dqm[3..0]" (rect 0 0 134 14)(font "Arial" (font_size 8)))
+		(text "sdram_wires_dqm[3..0]" (rect 4 277 138 291)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 144 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(output)
+		(text "sdram_wires_ras_n" (rect 0 0 115 14)(font "Arial" (font_size 8)))
+		(text "sdram_wires_ras_n" (rect 4 293 119 307)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 144 304))
+	)
+	(port
+		(pt 0 320)
+		(output)
+		(text "sdram_wires_we_n" (rect 0 0 115 14)(font "Arial" (font_size 8)))
+		(text "sdram_wires_we_n" (rect 4 309 119 323)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 144 320))
+	)
+	(port
+		(pt 352 72)
+		(output)
+		(text "c2_clock_clk" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "c2_clock_clk" (rect 286 61 359 75)(font "Arial" (font_size 8)))
+		(line (pt 352 72)(pt 208 72))
+	)
+	(port
+		(pt 0 272)
+		(bidir)
+		(text "sdram_wires_dq[31..0]" (rect 0 0 132 14)(font "Arial" (font_size 8)))
+		(text "sdram_wires_dq[31..0]" (rect 4 261 136 275)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 144 272)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 129 43 146 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 149 67 163 79)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 115 83 148 98)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 149 107 185 119)(font "Arial" (color 0 0 0)))
+		(text "leds" (rect 121 123 149 138)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 149 147 179 159)(font "Arial" (color 0 0 0)))
+		(text "sdram_wires" (rect 68 163 154 178)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "addr" (rect 149 187 170 199)(font "Arial" (color 0 0 0)))
+		(text "ba" (rect 149 203 160 215)(font "Arial" (color 0 0 0)))
+		(text "cas_n" (rect 149 219 178 231)(font "Arial" (color 0 0 0)))
+		(text "cke" (rect 149 235 166 247)(font "Arial" (color 0 0 0)))
+		(text "cs_n" (rect 149 251 172 263)(font "Arial" (color 0 0 0)))
+		(text "dq" (rect 149 267 160 279)(font "Arial" (color 0 0 0)))
+		(text "dqm" (rect 149 283 170 295)(font "Arial" (color 0 0 0)))
+		(text "ras_n" (rect 149 299 176 311)(font "Arial" (color 0 0 0)))
+		(text "we_n" (rect 149 315 173 327)(font "Arial" (color 0 0 0)))
+		(text "c2_clock" (rect 209 43 265 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 193 67 207 79)(font "Arial" (color 0 0 0)))
+		(text " SoC_JPEG " (rect 300 336 362 348)(font "Arial" ))
+		(line (pt 145 52)(pt 145 76))
+		(line (pt 146 52)(pt 146 76))
+		(line (pt 145 92)(pt 145 116))
+		(line (pt 146 92)(pt 146 116))
+		(line (pt 145 132)(pt 145 156))
+		(line (pt 146 132)(pt 146 156))
+		(line (pt 145 172)(pt 145 324))
+		(line (pt 146 172)(pt 146 324))
+		(line (pt 207 52)(pt 207 76))
+		(line (pt 206 52)(pt 206 76))
+		(line (pt 144 32)(pt 208 32))
+		(line (pt 208 32)(pt 208 336))
+		(line (pt 144 336)(pt 208 336))
+		(line (pt 144 32)(pt 144 336))
+		(line (pt 0 0)(pt 352 0))
+		(line (pt 352 0)(pt 352 352))
+		(line (pt 0 352)(pt 352 352))
+		(line (pt 0 0)(pt 0 352))
+	)
+)
+(connector
+	(pt 488 240)
+	(pt 704 240)
+)
+(connector
+	(pt 704 240)
+	(pt 712 240)
+)
+(connector
+	(pt 336 280)
+	(pt 704 280)
+)
+(connector
+	(pt 456 320)
+	(pt 704 320)
+)
+(junction (pt 704 240))
